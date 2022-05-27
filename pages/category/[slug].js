@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import NavBar from "../../components/NavBar";
+import Navbar from "../../components/Navbar";
 import Top from "../../components/Top";
 import Footer from "../../components/Footer";
 
@@ -22,7 +22,7 @@ export default function Category({ categories }) {
   return (
     <>
       <Top />
-      <NavBar />
+      <Navbar />
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
