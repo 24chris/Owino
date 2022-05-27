@@ -32,7 +32,7 @@ export default function Menu() {
                           </div>
                           <div className="mt-1 whitespace-normal">
                             <div className="font-13 text-black line-height text-center">
-                              Women's Shop
+                              Women&apos; Shop
                             </div>
                           </div>
                         </a>
@@ -53,7 +53,7 @@ export default function Menu() {
                           </div>
                           <div className="mt-1 whitespace-normal">
                             <div className="font-13 text-black line-height text-center">
-                              Men's Shop
+                              Men&apos; Shop
                             </div>
                           </div>
                         </a>

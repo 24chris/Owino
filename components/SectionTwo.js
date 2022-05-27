@@ -1,4 +1,4 @@
-<div className="p-24 flex flex-wrap items-center justify-center">
+{/* <div className="p-24 flex flex-wrap items-center justify-center">
     
     <div className="flex-shrink-0 m-6 relative overflow-hidden bg-orange-500 rounded-lg max-w-xs shadow-lg">
       <svg className="absolute bottom-0 left-0 mb-8 transform: scale(1.5); opacity: 0.1" viewBox="0 0 375 283" fill="none">
@@ -52,4 +52,4 @@
       </div>
     </div>
     
-  </div>
+  </div> */}

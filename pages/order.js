@@ -136,7 +136,7 @@ export default function Order() {
                 <div className="space-x-0 lg:flex lg:space-x-4">
                   <div className="w-full lg:w-1/2">
                     <label
-                      for="firstName"
+                      htmlFor="firstName"
                       className="block mb-3 text-sm font-semibold text-gray-500"
                     >
                       First Name
@@ -152,7 +152,7 @@ export default function Order() {
                   </div>
                   <div className="w-full lg:w-1/2 ">
                     <label
-                      for="firstName"
+                      htmlFor="firstName"
                       className="block mb-3 text-sm font-semibold text-gray-500"
                     >
                       Last Name
@@ -170,7 +170,7 @@ export default function Order() {
                 <div className="mt-4">
                   <div className="w-full">
                     <label
-                      for="Email"
+                      htmlFor="Email"
                       className="block mb-3 text-sm font-semibold text-gray-500"
                     >
                       Phone Number
@@ -188,7 +188,7 @@ export default function Order() {
                 <div className="mt-4">
                   <div className="w-full">
                     <label
-                      for="Address"
+                      htmlFor="Address"
                       className="block mb-3 text-sm font-semibold text-gray-500"
                     >
                       Address

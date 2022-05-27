@@ -15,7 +15,7 @@ export default function Flash({ flash }) {
             <h2 className="text-4xl mb-3">Flash</h2>
             <p className="text-gray-600 text-sm"></p>
           </div>
-          <div className="mt-6 grid grid-cols-2 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-6 xl:gap-x-8">
+          {/* <div className="mt-6 grid grid-cols-2 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-6 xl:gap-x-8">
             {flashs.map((flash) => (
               <Link href={`product/${encodeURIComponent(flash.get_absolute_url)}`}>
               <a>
@@ -48,7 +48,7 @@ export default function Flash({ flash }) {
               </a>
               </Link>
              ))}
-          </div>
+          </div> */}
         </div>
       </div>
     </>

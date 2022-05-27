@@ -1,4 +1,4 @@
-<div className="flex font-sans">
+{/* <div className="flex font-sans">
   <div className="flex-none w-48 relative">
     <img src="/classNameic-utility-jacket.jpg" alt="" className="absolute inset-0 w-full h-full object-cover" />
   </div>
@@ -67,4 +67,4 @@
       Free shipping on all continental US orders.
     </p>
   </form>
-</div>
+</div> */}
