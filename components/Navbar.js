@@ -27,8 +27,8 @@ export default function Navbar() {
                   className="w-full h-full object-center object-cover lg:w-full lg:h-full"
                   src="/logos/owino.png"
                   alt="logo"
-                  width={200}
-                  height={200}
+                  width={120}
+                  height={120}
                 />
                 </a>
                 </Link>
