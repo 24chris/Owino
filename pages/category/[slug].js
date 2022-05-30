@@ -38,16 +38,16 @@ export default function Category({ categories }) {
         className=""
       >
         <SwiperSlide className="flex-shrink-0 relative w-full min-h-40 bg-gray-200 aspect-w-1 aspect-h-1 rounded-md lg:h-40 lg:aspect-none">
-          <img src={catImage.get_slider_image} height={330} width={1490} alt="Image 1" />
+          <Image src={catImage.get_slider_image} height={330} width={1490} alt="Image 1" />
         </SwiperSlide>
         <SwiperSlide className="flex-shrink-0 relative w-full min-h-40 bg-gray-200 aspect-w-1 aspect-h-1 rounded-md lg:h-40 lg:aspect-none">
-          <img src={catImage.get_slider_image2} height={330} width={1490} alt="Image 1" />
+          <Image src={catImage.get_slider_image2} height={330} width={1490} alt="Image 1" />
         </SwiperSlide>
         <SwiperSlide className="flex-shrink-0 relative w-full min-h-40 bg-gray-200 aspect-w-1 aspect-h-1 rounded-md lg:h-40 lg:aspect-none">
-          <img src={catImage.get_slider_image3} height={330} width={1490} alt="Image 1" />
+          <Image src={catImage.get_slider_image3} height={330} width={1490} alt="Image 1" />
         </SwiperSlide>
         <SwiperSlide className="flex-shrink-0 relative w-full min-h-40 bg-gray-200 aspect-w-1 aspect-h-1 rounded-md lg:h-40 lg:aspect-none">
-          <img src={catImage.get_slider_image4} height={330} width={1490} alt="Image 1" />
+          <Image src={catImage.get_slider_image4} height={330} width={1490} alt="Image 1" />
         </SwiperSlide>
       </Swiper>
       
@@ -59,9 +59,9 @@ export default function Category({ categories }) {
           </div>
           <div className="mt-6 grid grid-cols-2 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-6 xl:gap-x-8">
             {groups.map((group) => (
-              // <Link key={group.id} href={`product/${encodeURIComponent(categories.get_absolute_url)}`}><a>
+              <Link key={group.id} href={`/product/${encodeURIComponent(group.get_absolute_url)}`}><a>
               <div
-                key={group.id}
+                // key={group.id}
                 className="group relative transform hover:translate-y-2 hover:shadow-xl transition duration-300"
               >
                 <div className="w-full min-h-80 bg-gray-200 aspect-w-1 aspect-h-1 rounded-md lg:h-40 lg:aspect-none">
@@ -86,8 +86,8 @@ export default function Category({ categories }) {
                   <p className="text-sm font-medium text-gray-900 "></p>
                 </div>
               </div>
-              // </a>
-              // </Link>
+               </a>
+               </Link>
             ))}
           </div>
         </div>
