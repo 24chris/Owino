@@ -19,7 +19,7 @@ export default function Menu() {
                 <div className="relative mx-auto overflow-hidden z-10">
                   <div className="relative flex w-full h-full">
                     <div className="relative  h-full flex-shrink-0 w-28 mr-7">
-                      <Link href="#">
+                      <Link href={`/category/women`}>
                         <a>
                           <div className="relative p-3">
                             <Image
@@ -32,7 +32,7 @@ export default function Menu() {
                           </div>
                           <div className="mt-1 whitespace-normal">
                             <div className="font-13 text-black line-height text-center">
-                              Women&apos; Shop
+                              Women&apos;s Shop
                             </div>
                           </div>
                         </a>
@@ -40,7 +40,7 @@ export default function Menu() {
                      
                     </div>
                     <div className="relative  h-full flex-shrink-0 w-28 mr-7">
-                      <Link href="#">
+                      <Link href={`/category/men`}>
                         <a>
                           <div className="relative p-3">
                             <Image
@@ -53,7 +53,7 @@ export default function Menu() {
                           </div>
                           <div className="mt-1 whitespace-normal">
                             <div className="font-13 text-black line-height text-center">
-                              Men&apos; Shop
+                              Men&apos;s Shop
                             </div>
                           </div>
                         </a>
@@ -61,7 +61,7 @@ export default function Menu() {
                       
                     </div>
                     <div className="relative  h-full flex-shrink-0 w-28 mr-7">
-                      <Link href="#">
+                      <Link href={`/category/kids`}>
                         <a>
                           <div className="relative p-3">
                             <Image
@@ -82,7 +82,7 @@ export default function Menu() {
                      
                     </div>
                     <div className="relative  h-full flex-shrink-0 w-28 mr-7">
-                      <Link href="#">
+                      <Link href={`/category/electronics`}>
                         <a>
                           <div className="relative p-3">
                             <Image
@@ -103,7 +103,7 @@ export default function Menu() {
                      
                     </div>
                     <div className="relative  h-full flex-shrink-0 w-28 mr-7">
-                      <Link href="#">
+                      <Link href={`/category/sports`}>
                         <a>
                           <div className="relative p-3">
                             <Image
@@ -124,7 +124,7 @@ export default function Menu() {
                       
                     </div>
                     <div className="relative  h-full flex-shrink-0 w-28 mr-7">
-                      <Link href="#">
+                      <Link href={`/category/beauty`}>
                         <a>
                           <div className="relative p-3">
                             <Image
@@ -145,7 +145,7 @@ export default function Menu() {
                      
                     </div>
                     <div className="relative  h-full flex-shrink-0 w-28 mr-7">
-                      <Link href="#">
+                      <Link href={`/category/home-supplies`}>
                         <a>
                           <div className="relative p-3">
                             <Image
@@ -165,7 +165,7 @@ export default function Menu() {
                       </Link>
                     </div>
                     <div className="relative  h-full flex-shrink-0 w-28 mr-7">
-                      <Link href="#">
+                      <Link href={`/category/baby`}>
                         <a>
                           <div className="relative p-3">
                             <Image
@@ -185,7 +185,7 @@ export default function Menu() {
                       </Link>
                     </div>
                     <div className="relative  h-full flex-shrink-0 w-28 mr-7">
-                      <Link href="#">
+                      <Link href={`/category/supermarket`}>
                         <a>
                           <div className="relative p-3">
                             <Image
@@ -205,7 +205,7 @@ export default function Menu() {
                       </Link>
                     </div>
                     <div className="relative  h-full flex-shrink-0 w-28 mr-7">
-                      <Link href="#">
+                      <Link href={`/category/watches`}>
                         <a>
                           <div className="relative p-3">
                             <Image

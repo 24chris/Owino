@@ -101,7 +101,7 @@ export async function getServerSideProps(context) {
 
   const choice = context.params.slug;
 
-  const res = await fetch(`http://127.0.0.1:8000/api/v1/products/${choice}`);
+  const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/products/${choice}`);
   const categories = await res.json();
 
   console.log("Category Returned", categories);

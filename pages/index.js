@@ -43,19 +43,19 @@ export async function getStaticProps(context) {
   // const product_slug = context.params.category_slug
   // const choice = context.params.slug
 
-  const res = await fetch(`http://127.0.0.1:8000/api/v1/products/discount/`);
+  const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/products/discount/`);
   const discounts = await res.json();
 
-  const ress = await fetch(`http://127.0.0.1:8000/api/v1/products/flash/`);
+  const ress = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/products/flash/`);
   const flash = await ress.json();
 
-  const newgood = await fetch(`http://127.0.0.1:8000/api/v1/products/new/`);
+  const newgood = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/products/new/`);
   const newgoodies = await newgood.json();
 
-  const tr = await fetch(`http://127.0.0.1:8000/api/v1/products/trending/`);
+  const tr = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/products/trending/`);
   const trends = await tr.json();
 
-  const wn = await fetch(`http://127.0.0.1:8000/api/v1/products/women/`);
+  const wn = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/products/women/`);
   const womens = await wn.json();
 
 

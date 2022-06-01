@@ -72,7 +72,7 @@ export default function Flash({flashs}) {
 export async function getStaticProps() {
     // Call an external API endpoint to get posts.
     // You can use any data fetching library
-    const res = await fetch('http://127.0.0.1:8000/api/v1/latest-products/')
+    const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/latest-products/`)
     const flashs = await res.json()
   
     // By returning { props: { posts } }, the Blog component

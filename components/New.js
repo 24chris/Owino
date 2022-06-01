@@ -49,7 +49,7 @@ export default function New({ newgoodies }) {
             </div>
             </div>
           </div> */}
-          {/* <div className="mt-6 grid grid-cols-2 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-6 xl:gap-x-8">
+          <div className="mt-6 grid grid-cols-2 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-6 xl:gap-x-8">
             {newbeies.map((newbie) => (
               <Link href={`product/${encodeURIComponent(newbie.get_absolute_url)}`}>
               <a>
@@ -83,7 +83,7 @@ export default function New({ newgoodies }) {
               </a>
               </Link>
              ))}
-          </div> */}
+          </div>
         </div>
       </div>
     </>

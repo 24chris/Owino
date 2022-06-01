@@ -502,7 +502,7 @@ export async function getStaticProps(context) {
   // const product_slug = context.params.category_slug
   const choice = context.params.slug
 
-  const res = await fetch(`http://127.0.0.1:8000/api/v1/products${choice}`)
+  const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/products${choice}`)
   const products = await res.json()
 
   console.log("product Returned", products)
@@ -535,7 +535,7 @@ export async function getStaticPaths(){
   // }
 
 
-  const res = await fetch(`http://127.0.0.1:8000/api/v1/latest-products/`)
+  const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/latest-products/`)
   const items = await res.json()
 
   const paths = items.map(item =>({
