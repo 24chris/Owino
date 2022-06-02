@@ -59,7 +59,7 @@ export default function Category({ categories }) {
           </div>
           <div className="mt-6 grid grid-cols-2 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-6 xl:gap-x-8">
             {groups.map((group) => (
-              <Link key={group.id} href="/product/${encodeURIComponent(group.get_absolute_url)}" as={`/product/${encodeURIComponent(group.get_absolute_url)}`} passHref><a>
+              <Link key={group.id} href={`/product/${encodeURIComponent(group.get_absolute_url)}`}><a>
               <div
                 // key={group.id}
                 className="group relative transform hover:translate-y-2 hover:shadow-xl transition duration-300"
