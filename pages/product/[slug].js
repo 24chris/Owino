@@ -520,12 +520,12 @@ export async function getServerSideProps(context) {
     props:{
       products
     },
-    revalidate:1
+    // revalidate:10
   }
     
 }
 
-export async function getStaticPaths(){
+// export async function getStaticPaths(){
   
 //   // const res = await fetch(`http://127.0.0.1:8000/api/v1/latest-products/`)
 //   // // const res = await fetch(`http://127.0.0.1:8000/api/v1/products/${category_slug}/${product_slug}`)
@@ -544,35 +544,35 @@ export async function getStaticPaths(){
 //   // }
 
 
-  const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/latest-products/`)
-  const items = await res.json()
+//   const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/latest-products/`)
+//   const items = await res.json()
 
-  const paths = items.map(item =>({
-    params:
-    {
-      // category:item.get_absolute_url,
-      slug:item.get_absolute_url
-    }
-  }))
+//   const paths = items.map(item =>({
+//     params:
+//     {
+//       // category:item.get_absolute_url,
+//       slug:item.get_absolute_url
+//     }
+//   }))
 
-    // Version one
-  // return{
-  //   paths:items.map(item =>{
-  //     return{
-  //       params:{
-  //         slug:item.get_absolute_url
-  //       }
-  //     }
-  //   }),
-  //   fallback:false
+//     // Version one
+//   // return{
+//   //   paths:items.map(item =>{
+//   //     return{
+//   //       params:{
+//   //         slug:item.get_absolute_url
+//   //       }
+//   //     }
+//   //   }),
+//   //   fallback:false
 
-   console.log("paths returned for  items:" , paths)
+//    console.log("paths returned for  items:" , paths)
    
-    return{
-      paths:[],
-      fallback:true
-    }
-  }
+//     return{
+//       paths,
+//       fallback:false
+//     }
+//   }
 
 
 
