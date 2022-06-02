@@ -60,23 +60,23 @@ export default function Navbar() {
               <div className="w-full items-center justify-between box-border flex mx-5">
                 <ul className="flex">
                   <li className="box-border flex text-sm px-2 font-semibold">
-                    <Link href={`/category/men`}>
-                    <a >
-                    Men
-                    </a>
-                    </Link>
-                  </li>
-                  <li className="box-border flex text-sm px-2 font-semibold">
-                    <Link href={`/category/kids`}>
-                    <a>
-                    Kids
-                    </a>
-                    </Link>
-                  </li>
-                  <li className="box-border flex text-sm px-2 font-semibold">
                     <Link href={`/`}>
+                    <a >
+                    Home
+                    </a>
+                    </Link>
+                  </li>
+                  <li className="box-border flex text-sm px-2 font-semibold">
+                    <Link href={`/category/men`}>
                     <a>
-                    Home 
+                     Men
+                    </a>
+                    </Link>
+                  </li>
+                  <li className="box-border flex text-sm px-2 font-semibold">
+                    <Link href={`/kids`}>
+                    <a>
+                     Kids
                     </a>
                     </Link>
                   </li>
