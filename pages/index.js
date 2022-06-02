@@ -19,7 +19,7 @@ export default function Home({ discounts, flash, newgoodies, trends, womens }) {
   console.log("disocunts", trends);
   console.log("disocunts", womens);
   
-  if(!discounts) return <p></p>
+  // if(!discounts) return <p></p>
   
   return (
     <>
