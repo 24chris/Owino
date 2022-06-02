@@ -310,10 +310,18 @@ import Top from '../../components/Top'
 import HomeSlider from '../../components/HomeSlider'
 import Footer from "../../components/Footer";
 import { useState } from "react";
-import Router from 'next/router'
+import {useRouter} from 'next/router'
 
 export default function Product({products}) {
     console.log('Products from slug page:',products)
+
+    const refreshData = () => {
+      router.replace(router.asPath);
+    }
+
+    useEffect(() => {
+      refreshData()
+   }, [])
 
 
       const item = products.name
