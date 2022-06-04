@@ -315,14 +315,6 @@ import {useRouter} from 'next/router'
 export default function Product({products}) {
     console.log('Products from slug page:',products)
 
-    const refreshData = () => {
-      router.replace(router.asPath);
-    }
-
-    useEffect(() => {
-      refreshData()
-   }, [])
-
 
       const item = products.name
       const price = products.price
@@ -503,7 +495,7 @@ export default function Product({products}) {
 
 
 
-export async function getServerSideProps(context) {
+export async function getStaticProps(context) {
 
   console.log("Context object:", context)
   // const category_slug = context.params.category_slug
@@ -520,12 +512,12 @@ export async function getServerSideProps(context) {
     props:{
       products
     },
-    // revalidate:10
+    revalidate:10
   }
     
 }
 
-// export async function getStaticPaths(){
+export async function getStaticPaths(){
   
 //   // const res = await fetch(`http://127.0.0.1:8000/api/v1/latest-products/`)
 //   // // const res = await fetch(`http://127.0.0.1:8000/api/v1/products/${category_slug}/${product_slug}`)
@@ -544,16 +536,16 @@ export async function getServerSideProps(context) {
 //   // }
 
 
-//   const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/latest-products/`)
-//   const items = await res.json()
+  const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/latest-products/`)
+  const items = await res.json()
 
-//   const paths = items.map(item =>({
-//     params:
-//     {
-//       // category:item.get_absolute_url,
-//       slug:item.get_absolute_url
-//     }
-//   }))
+  const paths = items.map(item =>({
+    params:
+    {
+      // category:item.get_absolute_url,
+      slug:item.get_absolute_url
+    }
+  }))
 
 //     // Version one
 //   // return{
@@ -566,13 +558,13 @@ export async function getServerSideProps(context) {
 //   //   }),
 //   //   fallback:false
 
-//    console.log("paths returned for  items:" , paths)
+   console.log("paths returned for  items:" , paths)
    
-//     return{
-//       paths,
-//       fallback:false
-//     }
-//   }
+    return{
+      paths,
+      fallback:'blocking'
+    }
+  }
 
 
 
