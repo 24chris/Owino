@@ -495,12 +495,12 @@ export default function Product({products}) {
 
 
 
-export async function getStaticProps(context) {
+export async function getStaticProps({params}) {
 
-  console.log("Context object:", context)
+  // console.log("Context object Issue assessment:", context)
   // const category_slug = context.params.category_slug
   // const product_slug = context.params.category_slug
-  const choice = context.params.slug
+  const choice = params.slug
 
   const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/products${choice}`)
   const products = await res.json()
