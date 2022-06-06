@@ -13,9 +13,9 @@ import { Autoplay, Pagination, Navigation } from "swiper";
 
 // Image import 
 import Image from 'next/image'
-import PicOne from '../public/items/imgthree.PNG'
-import PicTwo from '../public/items/imgtwo.PNG'
-import PicThree from '../public/items/imgone.PNG'
+import PicOne from '../public/items/imgthree.png'
+import PicTwo from '../public/items/imgtwo.png'
+import PicThree from '../public/items/imgone.png'
 import PicFour from '../public/items/slider4.jpg'
 import PicFive from '../public/items/slider5.jpg'
 
