@@ -88,7 +88,7 @@ export default function Home({ discounts, flash, newgoodies, trends, womens }) {
   );
 }
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   // console.log("Context object:", context);
   // const category_slug = context.params.category_slug
   // const product_slug = context.params.category_slug
