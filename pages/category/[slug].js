@@ -17,6 +17,8 @@ export default function Category({ categories }) {
   const groups = categories.products;
   console.log("Categories:", groups);
 
+  
+
   const catImage = categories
 
   return (
@@ -61,7 +63,7 @@ export default function Category({ categories }) {
             {groups.map((group) => (
               <Link key={group.id} href={`/product/${encodeURIComponent(group.get_absolute_url)}`}><a>
               <div
-                // key={group.id}
+                key={group.id}
                 className="group relative transform hover:translate-y-2 hover:shadow-xl transition duration-300"
               >
                 <div className="w-full min-h-80 bg-gray-200 aspect-w-1 aspect-h-1 rounded-md lg:h-40 lg:aspect-none">
@@ -69,6 +71,8 @@ export default function Category({ categories }) {
                     src={group.get_image}
                     alt={group.imageAlt}
                     className="h-48 w-full object-cover md:h-full md:w-48"
+                    height={192}
+                    width={200}
                   />
                 </div>
                 <div className="overflow-hidden font-semibold text-base text-center mt-6">
@@ -86,7 +90,7 @@ export default function Category({ categories }) {
                   <p className="text-sm font-medium text-gray-900 "></p>
                 </div>
               </div>
-               </a>
+                </a>
                </Link>
             ))}
           </div>
@@ -113,23 +117,3 @@ export async function getServerSideProps(context) {
   };
 }
 
-// export async function getStaticPaths(){
-
-//   const res = await fetch(`http://127.0.0.1:8000/api/v1/latest-products/`)
-//   const items = await res.json()
-
-//   const paths = items.map(item =>({
-//     params:
-//     {
-//       // category:item.get_absolute_url,
-//       slug:item.get_absolute_url
-//     }
-//   }))
-
-//    console.log("paths returned for Categories:" , paths)
-
-//     return{
-//       paths,
-//       fallback:false
-//     }
-//   }

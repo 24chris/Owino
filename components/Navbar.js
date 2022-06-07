@@ -74,7 +74,7 @@ export default function Navbar() {
                     </Link>
                   </li>
                   <li className="box-border flex text-sm px-2 font-semibold">
-                    <Link href={`/kids`}>
+                    <Link href={`/category/kids`}>
                     <a>
                      Kids
                     </a>

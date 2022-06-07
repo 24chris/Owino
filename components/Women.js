@@ -24,9 +24,11 @@ export default function Women({ womens }) {
                 className="group relative transform hover:translate-y-2 hover:shadow-xl transition duration-300"
               >
                 <div className="w-full min-h-80 bg-gray-200 aspect-w-1 aspect-h-1 rounded-md lg:h-40 lg:aspect-none">
-                  <img
+                  <Image
                     src={all.get_image}
-                    // alt={women.imageAlt}
+                    alt={all.imageAlt}
+                    height={192}
+                    width={200}
                     className="h-48 w-full object-cover md:h-full md:w-48"
                   />
                 </div>
