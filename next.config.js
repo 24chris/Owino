@@ -7,6 +7,6 @@ const nextConfig = {
 // module.exports = nextConfig
 module.exports = {
   images:{
-    domains:['owinotest.herokuapp.com'],
+    domains:['owinotest.herokuapp.com','127.0.0.1'],
   }
 }
