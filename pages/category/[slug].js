@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import Navbar from "../../components/Navbar";
-import Top from "../../components/Top";
+import Top from '../../components/Top'
 import Footer from "../../components/Footer";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -105,7 +105,7 @@ export async function getServerSideProps(context) {
 
   const choice = context.params.slug;
 
-  const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/products/${choice}`);
+  const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/products${choice}`);
   const categories = await res.json();
 
   console.log("Category Returned", categories);
