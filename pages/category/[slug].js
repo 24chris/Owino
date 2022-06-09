@@ -9,6 +9,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import Head from "next/head";
 // import "./styles.css";
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper";
@@ -23,6 +24,10 @@ export default function Category({ categories }) {
 
   return (
     <>
+    <Head>
+      <title>{categories.name}</title>
+      <meta name="category" content={categories.name}/>
+    </Head>
       <Top />
       <Navbar />
       <Swiper
@@ -105,7 +110,7 @@ export async function getServerSideProps(context) {
 
   const choice = context.params.slug;
 
-  const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/products${choice}`);
+  const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/products/${choice}`);
   const categories = await res.json();
 
   console.log("Category Returned", categories);

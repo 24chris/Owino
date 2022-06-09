@@ -19,7 +19,7 @@ export default function Menu() {
                 <div className="relative mx-auto overflow-hidden z-10">
                   <div className="relative flex w-full h-full">
                     <div className="relative  h-full flex-shrink-0 w-28 mr-7">
-                      <Link href={`/category/women`}>
+                      <Link href={`${encodeURIComponent('category/women')}`} as={'category/women'}>
                         <a>
                           <div className="relative p-3">
                             <Image
@@ -40,7 +40,7 @@ export default function Menu() {
                      
                     </div>
                     <div className="relative  h-full flex-shrink-0 w-28 mr-7">
-                      <Link href={`/category/men`}>
+                      <Link href={`${encodeURIComponent('category/men')}`} as={'category/men'}>
                         <a>
                           <div className="relative p-3">
                             <Image
@@ -61,7 +61,7 @@ export default function Menu() {
                       
                     </div>
                     <div className="relative  h-full flex-shrink-0 w-28 mr-7">
-                      <Link href={`/category/kids`}>
+                      <Link href={`${encodeURIComponent('category/kids')}`} as={'category/kids'}>
                         <a>
                           <div className="relative p-3">
                             <Image
@@ -82,7 +82,7 @@ export default function Menu() {
                      
                     </div>
                     <div className="relative  h-full flex-shrink-0 w-28 mr-7">
-                      <Link href={`/category/electronics`}>
+                      <Link href={`${encodeURIComponent('category/electronics-tools')}`} as={'category/electronics-tools'}>
                         <a>
                           <div className="relative p-3">
                             <Image
@@ -103,7 +103,7 @@ export default function Menu() {
                      
                     </div>
                     <div className="relative  h-full flex-shrink-0 w-28 mr-7">
-                      <Link href={`/category/sports`}>
+                      <Link href={`${encodeURIComponent('category/sports-entertainment')}`} as={'category/sports-entertainment'}>
                         <a>
                           <div className="relative p-3">
                             <Image
@@ -124,7 +124,7 @@ export default function Menu() {
                       
                     </div>
                     <div className="relative  h-full flex-shrink-0 w-28 mr-7">
-                      <Link href={`/category/beauty`}>
+                      <Link href={`${encodeURIComponent('category/beauty-health')}`} as={'category/beauty-health'}>
                         <a>
                           <div className="relative p-3">
                             <Image
@@ -145,7 +145,7 @@ export default function Menu() {
                      
                     </div>
                     <div className="relative  h-full flex-shrink-0 w-28 mr-7">
-                      <Link href={`/category/home-supplies`}>
+                      <Link href={`${encodeURIComponent('category/home-supplies')}`} as={'category/home-supplies'}>
                         <a>
                           <div className="relative p-3">
                             <Image
@@ -165,7 +165,7 @@ export default function Menu() {
                       </Link>
                     </div>
                     <div className="relative  h-full flex-shrink-0 w-28 mr-7">
-                      <Link href={`/category/baby`}>
+                      <Link href={`${encodeURIComponent('category/baby')}`} as={'category/baby'}>
                         <a>
                           <div className="relative p-3">
                             <Image
@@ -185,7 +185,7 @@ export default function Menu() {
                       </Link>
                     </div>
                     <div className="relative  h-full flex-shrink-0 w-28 mr-7">
-                      <Link href={`/category/supermarket`}>
+                      <Link href={`${encodeURIComponent('category/supermarket')}`} as={'category/supermarket'}>
                         <a>
                           <div className="relative p-3">
                             <Image
@@ -205,7 +205,7 @@ export default function Menu() {
                       </Link>
                     </div>
                     <div className="relative  h-full flex-shrink-0 w-28 mr-7">
-                      <Link href={`/category/watches`}>
+                      <Link href={`${encodeURIComponent('category/watches')}`} as={'category/watches'}>
                         <a>
                           <div className="relative p-3">
                             <Image

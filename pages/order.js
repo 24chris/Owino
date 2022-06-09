@@ -4,6 +4,8 @@ import { useRouter } from "next/router";
 import { useState } from "react";
 import Router from 'next/router'
 import {useFlutterwave,closePaymentModal} from 'flutterwave-react-v3'
+import Top from '../components/Top'
+import Head from "next/head";
 
 export default function Order() {
   const router = useRouter();
@@ -114,6 +116,11 @@ export default function Order() {
 
   return (
     <>
+    <Head>
+      <title>{props.item}</title>
+      <meta name="Order" content={props.item}/>
+    </Head>
+    <Top/>
       <Navbar />
       <div className="container p-12 mx-auto">
         <div className="flex flex-col w-full px-0 mx-auto md:flex-row">

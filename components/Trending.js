@@ -17,7 +17,7 @@ export default function Trending({ trends }) {
           </div>
           <div className="mt-6 grid grid-cols-2 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-6 xl:gap-x-8">
             {Trends.map((Trend) => (
-              <Link key={Trend.id} href={`product/${encodeURIComponent(Trend.get_absolute_url)}`}>
+              <Link key={Trend.id} href={`product/${encodeURIComponent(Trend.get_absolute_url)}`} as={`product/${encodeURIComponent(Trend.get_absolute_url)}`}>
               <a>
               <div
                 

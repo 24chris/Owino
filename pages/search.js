@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import Head from "next/head";
 
 export default function Trending() {
 
@@ -27,6 +28,10 @@ export default function Trending() {
   
   return (
     <>
+    <Head>
+      <title>Search</title>
+      <meta name="search" content="search"/>
+    </Head>
       <div className="bg-white">
         <div className="max-w-2xl mx-auto py-0 px-4 sm:py-0 sm:px-6 lg:max-w-7xl lg:px-8">
           <div className="pt-10 pb-6 flex flex-col items-center">

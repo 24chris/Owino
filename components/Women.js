@@ -17,7 +17,7 @@ export default function Women({ womens }) {
           </div>
           <div className="mt-6 grid grid-cols-2 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-6 xl:gap-x-8">
             {alls.map((all) => (
-              <Link key={all.id} href={`product/${encodeURIComponent(all.get_absolute_url)}`}>
+              <Link key={all.id} href={`product/${encodeURIComponent(all.get_absolute_url)}`} as={`product/${encodeURIComponent(all.get_absolute_url)}`}>
               <a>
               <div
                 

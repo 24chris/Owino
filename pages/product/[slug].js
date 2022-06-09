@@ -311,6 +311,7 @@ import HomeSlider from '../../components/HomeSlider'
 import Footer from "../../components/Footer";
 import { useState } from "react";
 import {useRouter} from 'next/router'
+import Head from "next/head";
 
 export default function Product({products}) {
     console.log('Products from slug page:',products)
@@ -338,6 +339,10 @@ export default function Product({products}) {
     
   return (
     <>
+    <Head>
+      <title>{products.name}</title>
+      <meta name="category" content={products.description}/>
+    </Head>
      <Top />
       <NavBar />
       <HomeSlider/>
@@ -346,11 +351,12 @@ export default function Product({products}) {
           
           {/* Product's image */}
           <div className="relative w-72 h-72 sm:w-96 sm:h-96">
-            <img
+            <Image
               src={products.get_image}
-              alt="long sleeved shirt"
+              alt={products.name}
               layout="fill"
-              
+              width={200}
+              height={200}
               // objectFit="contain"
             />
           </div>
