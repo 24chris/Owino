@@ -12,7 +12,7 @@ export default function New({ newgoodies }) {
       <div className="bg-white">
         <div className="max-w-2xl mx-auto py-0 px-4 sm:py-0 sm:px-6 lg:max-w-7xl lg:px-8">
           <div className="pt-10 pb-6 flex flex-col items-center">
-            <h2 className="text-4xl mb-3">New</h2>
+            <h2 className="text-4xl mb-3">New Arrivals</h2>
             <p className="text-gray-600 text-sm"></p>
           </div>
           <div className="mt-6 grid grid-cols-2 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-6 xl:gap-x-8">

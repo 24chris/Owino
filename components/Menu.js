@@ -61,7 +61,7 @@ export default function Menu() {
                       
                     </div>
                     <div className="relative  h-full flex-shrink-0 w-28 mr-7">
-                      <Link href={`${encodeURIComponent('category/kids')}`} as={'category/kids'}>
+                      <Link href={`${encodeURIComponent('category/kids-corner')}`} as={'category/kids-corner'}>
                         <a>
                           <div className="relative p-3">
                             <Image
@@ -205,7 +205,7 @@ export default function Menu() {
                       </Link>
                     </div>
                     <div className="relative  h-full flex-shrink-0 w-28 mr-7">
-                      <Link href={`${encodeURIComponent('category/watches')}`} as={'category/watches'}>
+                      <Link href={`${encodeURIComponent('category/watches-glasses')}`} as={'category/watches-glasses'}>
                         <a>
                           <div className="relative p-3">
                             <Image
