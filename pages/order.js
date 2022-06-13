@@ -27,7 +27,7 @@ export default function Order() {
     currency: 'UGX',
     payment_options: 'card,mobilemoneyuganda',
     customer: {
-      email: 'user@gmail.com',
+      email: 'owinoonline@gmail.com',
       phonenumber: '',
       name: lastname,
     },

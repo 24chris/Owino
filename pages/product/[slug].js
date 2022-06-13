@@ -398,6 +398,88 @@ export default function Product({products}) {
          
         </div>
       </div>
+      <div className="pt-10 pb-6 flex flex-col items-center">
+        <h2 className="text-4xl mb-3">Related Products</h2>
+        <p className="text-gray-600 text-sm"></p>
+      </div>
+      <div className="p-24 flex flex-wrap items-center justify-center">
+        <div className="flex-shrink-0 m-6 relative overflow-hidden bg-red-500 rounded-lg max-w-xs shadow-lg">
+          <div className="relative pt-10 px-10 flex items-center justify-center">
+            <div className="block absolute w-48 h-48 bottom-0 left-0 -mb-24 ml-3"></div>
+            <img
+              className="relative w-40"
+              src={products.get_image}
+              alt=""
+            />
+          </div>
+          <div className="relative text-white px-6 pb-6 mt-6">
+            <span className="block opacity-75 -mb-1"></span>
+            <div className="flex justify-between">
+              <span className="block font-semibold text-xl">{products.name}</span>
+              <span className="block bg-white rounded-full text-red-500 text-xs font-bold px-3 py-2 leading-none flex items-center">
+              {products.price.toLocaleString()}/=
+              </span>
+            </div>
+          </div>
+        </div>
+        <div className="flex-shrink-0 m-6 relative overflow-hidden bg-red-500 rounded-lg max-w-xs shadow-lg">
+          <div className="relative pt-10 px-10 flex items-center justify-center">
+            <div className="block absolute w-48 h-48 bottom-0 left-0 -mb-24 ml-3 background: radial-gradient(black, transparent 60%); transform: rotate3d(0, 0, 1, 20deg) scale3d(1, 0.6, 1); opacity: 0.2"></div>
+            <img
+              className="relative w-40"
+              src={products.get_image}
+              alt=""
+            />
+          </div>
+          <div className="relative text-white px-6 pb-6 mt-6">
+            <span className="block opacity-75 -mb-1"></span>
+            <div className="flex justify-between">
+              <span className="block font-semibold text-xl">{products.name}</span>
+              <span className="block bg-white rounded-full text-red-500 text-xs font-bold px-3 py-2 leading-none flex items-center">
+               50,000/=
+              </span>
+            </div>
+          </div>
+        </div>
+        <div className="flex-shrink-0 m-6 relative overflow-hidden bg-red-500 rounded-lg max-w-xs shadow-lg">
+          <div className="relative pt-10 px-10 flex items-center justify-center">
+            <div className="block absolute w-48 h-48 bottom-0 left-0 -mb-24 ml-3 background: radial-gradient(black, transparent 60%); transform: rotate3d(0, 0, 1, 20deg) scale3d(1, 0.6, 1); opacity: 0.2"></div>
+            <img
+              className="relative w-40"
+              src={products.get_image}
+              alt=""
+            />
+          </div>
+          <div className="relative text-white px-6 pb-6 mt-6">
+            <span className="block opacity-75 -mb-1"></span>
+            <div className="flex justify-between">
+              <span className="block font-semibold text-xl">{products.name}</span>
+              <span className="block bg-white rounded-full text-red-500 text-xs font-bold px-3 py-2 leading-none flex items-center">
+              {products.price.toLocaleString()}/=
+              </span>
+            </div>
+          </div>
+        </div>
+        <div className="flex-shrink-0 m-6 relative overflow-hidden bg-red-500 rounded-lg max-w-xs shadow-lg">
+          <div className="relative pt-10 px-10 flex items-center justify-center">
+            <div className="block absolute w-48 h-48 bottom-0 left-0 -mb-24 ml-3 background: radial-gradient(black, transparent 60%); transform: rotate3d(0, 0, 1, 20deg) scale3d(1, 0.6, 1); opacity: 0.2"></div>
+            <img
+              className="relative w-40"
+              src={products.get_image}
+              alt=""
+            />
+          </div>
+          <div className="relative text-white px-6 pb-6 mt-6">
+            <span className="block opacity-75 -mb-1"></span>
+            <div className="flex justify-between">
+              <span className="block font-semibold text-xl">{products.name}</span>
+              <span className="block bg-white rounded-full text-red-500 text-xs font-bold px-3 py-2 leading-none flex items-center">
+                {products.price.toLocaleString()}/=
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
       
       <Footer />
     </>

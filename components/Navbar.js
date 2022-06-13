@@ -88,7 +88,7 @@ export default function Navbar() {
                     </Link>
                   </li>
                 </ul>
-                <ul className="flex right-0 absolute">
+                {/* <ul className="flex right-0 absolute">
                   <li className="box-border px-3 text-sm font-semibold">
                     <a href="#">
                     Download
@@ -99,7 +99,7 @@ export default function Navbar() {
                     Contact Us
                     </a>
                   </li>
-                </ul>
+                </ul> */}
               </div>
             </div>
           </div>

@@ -12,7 +12,7 @@ export default function Menu() {
           <p className="text-gray-600 text-sm"></p>
         </div>
 
-        <div className="relative py-3 px-0">
+        <marquee className="relative py-3 px-0" behavior="alternate" scrollamount="3">
           <div className="mx-auto w-full px-12 xl:px-12">
             <div className="flex flex-wrap -mx-4">
               <div className="flex flex-grow-0 flex-shrink-0 flex-basis max-w-full">
@@ -24,7 +24,7 @@ export default function Menu() {
                           <div className="relative p-3">
                             <Image
                               className="absolute top-0 left-0 bottom-0 right-0 max-w-full max-h-full bg-white rounded-full h-48 w-full object-cover md:h-full md:w-48"
-                              src="/items/shoe.jpg"
+                              src="/items/women.jpg"
                               height={150}
                               width={150}
                               alt="bag"
@@ -45,7 +45,7 @@ export default function Menu() {
                           <div className="relative p-3">
                             <Image
                               className="absolute top-0 left-0 bottom-0 right-0 max-w-full max-h-full bg-white rounded-full h-48 w-full object-cover md:h-full md:w-48"
-                              src="/items/shoe.jpg"
+                              src="/items/men.jpg"
                               height={150}
                               width={150}
                               alt="bag"
@@ -66,7 +66,7 @@ export default function Menu() {
                           <div className="relative p-3">
                             <Image
                               className="absolute top-0 left-0 bottom-0 right-0 max-w-full max-h-full bg-white rounded-full h-48 w-full object-cover md:h-full md:w-48"
-                              src="/items/shoe.jpg"
+                              src="/items/kids.jpg"
                               height={150}
                               width={150}
                               alt="bag"
@@ -87,7 +87,7 @@ export default function Menu() {
                           <div className="relative p-3">
                             <Image
                               className="absolute top-0 left-0 bottom-0 right-0 max-w-full max-h-full bg-white rounded-full h-48 w-full object-cover md:h-full md:w-48"
-                              src="/items/shoe.jpg"
+                              src="/items/electronics.jpg"
                               height={150}
                               width={150}
                               alt="bag"
@@ -108,7 +108,7 @@ export default function Menu() {
                           <div className="relative p-3">
                             <Image
                               className="absolute top-0 left-0 bottom-0 right-0 max-w-full max-h-full bg-white rounded-full h-48 w-full object-cover md:h-full md:w-48"
-                              src="/items/bag.jpg"
+                              src="/items/sports-equipment.jpg"
                               height={150}
                               width={150}
                               alt="bag"
@@ -129,7 +129,7 @@ export default function Menu() {
                           <div className="relative p-3">
                             <Image
                               className="absolute top-0 left-0 bottom-0 right-0 max-w-full max-h-full bg-white rounded-full h-48 w-full object-cover md:h-full md:w-48"
-                              src="/items/golfbag.jpg"
+                              src="/items/beauty.jpg"
                               height={150}
                               width={150}
                               alt="bag"
@@ -150,7 +150,7 @@ export default function Menu() {
                           <div className="relative p-3">
                             <Image
                               className="absolute top-0 left-0 bottom-0 right-0 max-w-full max-h-full bg-white rounded-full h-48 w-full object-cover md:h-full md:w-48"
-                              src="/items/golfbag.jpg"
+                              src="/items/home.jpg"
                               height={150}
                               width={150}
                               alt="bag"
@@ -170,7 +170,7 @@ export default function Menu() {
                           <div className="relative p-3">
                             <Image
                               className="absolute top-0 left-0 bottom-0 right-0 max-w-full max-h-full bg-white rounded-full h-48 w-full object-cover md:h-full md:w-48"
-                              src="/items/golfbag.jpg"
+                              src="/items/baby.jpg"
                               height={150}
                               width={150}
                               alt="bag"
@@ -190,7 +190,7 @@ export default function Menu() {
                           <div className="relative p-3">
                             <Image
                               className="absolute top-0 left-0 bottom-0 right-0 max-w-full max-h-full bg-white rounded-full h-48 w-full object-cover md:h-full md:w-48"
-                              src="/items/golfbag.jpg"
+                              src="/items/supermarket.jpg"
                               height={150}
                               width={150}
                               alt="bag"
@@ -210,7 +210,7 @@ export default function Menu() {
                           <div className="relative p-3">
                             <Image
                               className="absolute top-0 left-0 bottom-0 right-0 max-w-full max-h-full bg-white rounded-full h-48 w-full object-cover md:h-full md:w-48"
-                              src="/items/golfbag.jpg"
+                              src="/items/watch-sunglasses.jpg"
                               height={150}
                               width={150}
                               alt="bag"
@@ -229,7 +229,7 @@ export default function Menu() {
               </div>
             </div>
           </div>
-        </div>
+        </marquee>
       </div>
     </div>
   );
