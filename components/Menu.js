@@ -1,5 +1,16 @@
 import Image from "next/image";
 import Link from "next/link";
+import {Swiper,SwiperSlide} from "swiper/react"
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+
+// import "./styles.css";
+
+// import required modules
+import { Autoplay, Pagination, Navigation } from "swiper";
 
 export default function Menu() {
   return (
@@ -12,12 +23,14 @@ export default function Menu() {
           <p className="text-gray-600 text-sm"></p>
         </div>
 
-        <marquee className="relative py-3 px-0" behavior="alternate" scrollamount="3">
+        <div className="relative py-3 px-0" >
+       
           <div className="mx-auto w-full px-12 xl:px-12">
             <div className="flex flex-wrap -mx-4">
               <div className="flex flex-grow-0 flex-shrink-0 flex-basis max-w-full">
                 <div className="relative mx-auto overflow-hidden z-10">
                   <div className="relative flex w-full h-full">
+                    
                     <div className="relative  h-full flex-shrink-0 w-28 mr-7">
                       <Link href={`${encodeURIComponent('category/women')}`} as={'category/women'}>
                         <a>
@@ -61,7 +74,7 @@ export default function Menu() {
                       
                     </div>
                     <div className="relative  h-full flex-shrink-0 w-28 mr-7">
-                      <Link href={`${encodeURIComponent('category/kids-corner')}`} as={'category/kids-corner'}>
+                      <Link href={`${encodeURIComponent('category/kids')}`} as={'category/kids'}>
                         <a>
                           <div className="relative p-3">
                             <Image
@@ -225,11 +238,12 @@ export default function Menu() {
                       </Link>
                     </div>
                   </div>
-                </div>
+                
               </div>
             </div>
           </div>
-        </marquee>
+          </div>
+        </div>
       </div>
     </div>
   );
