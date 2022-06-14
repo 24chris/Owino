@@ -10,7 +10,7 @@ import "swiper/css/navigation";
 // import "./styles.css";
 
 // import required modules
-import { Autoplay, Pagination, Navigation } from "swiper";
+import { Autoplay, Navigation } from "swiper";
 
 export default function Menu() {
   return (
@@ -24,13 +24,47 @@ export default function Menu() {
         </div>
 
         <div className="relative py-3 px-0" >
-       
+            <Swiper
+            slidesPerView={3}
+            slidesPerGroup={1}
+            
+            breakpoints={{
+              // 640: {
+              //   slidesPerView: 4,
+              //   spaceBetween: 0,
+              //   slidesPerGroup:1,
+              // },
+              768: {
+                slidesPerView: 4,
+                spaceBetween: 5,
+                slidesPerGroup:4,
+              },
+              1024: {
+                slidesPerView: 10,
+                spaceBetween: 0,
+                slidesPerGroup:1,
+                
+              },
+            }}
+
+            loop={true}
+            spaceBetween={10}
+            centeredSlides={true}
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+            }}
+            
+            modules={[Autoplay,  Navigation]}
+            className=""
+          >
           <div className="mx-auto w-full px-12 xl:px-12">
             <div className="flex flex-wrap -mx-4">
               <div className="flex flex-grow-0 flex-shrink-0 flex-basis max-w-full">
                 <div className="relative mx-auto overflow-hidden z-10">
+                  
                   <div className="relative flex w-full h-full">
-                    
+                    <SwiperSlide>
                     <div className="relative  h-full flex-shrink-0 w-28 mr-7">
                       <Link href={`${encodeURIComponent('category/women')}`} as={'category/women'}>
                         <a>
@@ -52,6 +86,9 @@ export default function Menu() {
                       </Link>
                      
                     </div>
+                    </SwiperSlide>
+
+                    <SwiperSlide>
                     <div className="relative  h-full flex-shrink-0 w-28 mr-7">
                       <Link href={`${encodeURIComponent('category/men')}`} as={'category/men'}>
                         <a>
@@ -73,6 +110,9 @@ export default function Menu() {
                       </Link>
                       
                     </div>
+                    </SwiperSlide>
+
+                    <SwiperSlide>
                     <div className="relative  h-full flex-shrink-0 w-28 mr-7">
                       <Link href={`${encodeURIComponent('category/kids')}`} as={'category/kids'}>
                         <a>
@@ -94,6 +134,10 @@ export default function Menu() {
                       </Link>
                      
                     </div>
+
+                    </SwiperSlide>
+
+                    <SwiperSlide>
                     <div className="relative  h-full flex-shrink-0 w-28 mr-7">
                       <Link href={`${encodeURIComponent('category/electronics-tools')}`} as={'category/electronics-tools'}>
                         <a>
@@ -115,6 +159,9 @@ export default function Menu() {
                       </Link>
                      
                     </div>
+                    </SwiperSlide>
+
+                    <SwiperSlide>
                     <div className="relative  h-full flex-shrink-0 w-28 mr-7">
                       <Link href={`${encodeURIComponent('category/sports-entertainment')}`} as={'category/sports-entertainment'}>
                         <a>
@@ -136,6 +183,10 @@ export default function Menu() {
                       </Link>
                       
                     </div>
+
+                    </SwiperSlide>
+
+                    <SwiperSlide>
                     <div className="relative  h-full flex-shrink-0 w-28 mr-7">
                       <Link href={`${encodeURIComponent('category/beauty-health')}`} as={'category/beauty-health'}>
                         <a>
@@ -157,6 +208,10 @@ export default function Menu() {
                       </Link>
                      
                     </div>
+
+                    </SwiperSlide>
+
+                    <SwiperSlide>
                     <div className="relative  h-full flex-shrink-0 w-28 mr-7">
                       <Link href={`${encodeURIComponent('category/home-supplies')}`} as={'category/home-supplies'}>
                         <a>
@@ -177,6 +232,9 @@ export default function Menu() {
                         </a>
                       </Link>
                     </div>
+                    </SwiperSlide>
+
+                    <SwiperSlide>
                     <div className="relative  h-full flex-shrink-0 w-28 mr-7">
                       <Link href={`${encodeURIComponent('category/baby')}`} as={'category/baby'}>
                         <a>
@@ -197,6 +255,9 @@ export default function Menu() {
                         </a>
                       </Link>
                     </div>
+                    </SwiperSlide>
+
+                    <SwiperSlide>
                     <div className="relative  h-full flex-shrink-0 w-28 mr-7">
                       <Link href={`${encodeURIComponent('category/supermarket')}`} as={'category/supermarket'}>
                         <a>
@@ -217,6 +278,9 @@ export default function Menu() {
                         </a>
                       </Link>
                     </div>
+                    </SwiperSlide>
+
+                    <SwiperSlide>
                     <div className="relative  h-full flex-shrink-0 w-28 mr-7">
                       <Link href={`${encodeURIComponent('category/watches-glasses')}`} as={'category/watches-glasses'}>
                         <a>
@@ -237,12 +301,14 @@ export default function Menu() {
                         </a>
                       </Link>
                     </div>
+                    </SwiperSlide>
                   </div>
                 
               </div>
             </div>
           </div>
           </div>
+          </Swiper>
         </div>
       </div>
     </div>
