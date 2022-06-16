@@ -11,7 +11,7 @@ export default function Sucess() {
   return (
     <>
     <Head>
-      <title>Success</title>
+      <title>Success| Owinoonline.com is an Online Shopping Portal That Mostly Deals In Second Hand Items</title>
       <meta name="success" content="sucess"/>
     </Head>
     <Top/>

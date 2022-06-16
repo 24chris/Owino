@@ -29,8 +29,9 @@ export default function Home({ discounts, flash, newgoodies, trends, womens,cate
   return (
     <>
     <Head>
-      <title>Home</title>
+      <title>Owinoonline.com is an Online Shopping Portal That Mostly Deals In Second Hand Items</title>
       <meta name="Home" content="Home"/>
+      <link rel="icon" href="/owinoonline.ico" />
     </Head>
       <Top />
       <Navbar />

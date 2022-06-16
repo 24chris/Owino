@@ -25,8 +25,9 @@ export default function Category({ categories }) {
   return (
     <>
     <Head>
-      <title>{categories.name}</title>
+      <title>{categories.name} | Owinoonline.com is an Online Shopping Portal That Mostly Deals In Second Hand Items</title>
       <meta name="category" content={categories.name}/>
+      <link rel="icon" href="/owinoline.ico" />
     </Head>
       <Top />
       <Navbar />

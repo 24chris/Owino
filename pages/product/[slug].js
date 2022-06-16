@@ -340,7 +340,7 @@ export default function Product({products}) {
   return (
     <>
     <Head>
-      <title>{products.name}</title>
+      <title>{products.name} | Owinoonline.com is an Online Shopping Portal That Mostly Deals In Second Hand Items</title>
       <meta name="category" content={products.description}/>
     </Head>
      <Top />

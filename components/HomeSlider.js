@@ -13,11 +13,11 @@ import { Autoplay, Pagination, Navigation } from "swiper";
 
 // Image import 
 import Image from 'next/image'
-import PicOne from '../public/items/imgone.png'
-import PicTwo from '../public/items/imgthree.png'
-import PicThree from '../public/items/imgfive.png'
-import PicFour from '../public/items/imgtwo.png'
-import PicFive from '../public/items/slider5.jpg'
+import PicOne from '../public/items/88.png'
+import PicTwo from '../public/items/KK.png'
+import PicThree from '../public/items/MM.png'
+import PicFour from '../public/items/online4.png'
+import PicFive from '../public/items/online5.png'
 
 
 

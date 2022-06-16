@@ -23,7 +23,7 @@ export default function Flash({ flash }) {
                 
                 className="group relative transform hover:translate-y-2 hover:shadow-xl transition duration-300"
               >
-                <div className="w-full min-h-80 bg-gray-200 aspect-w-1 aspect-h-1 rounded-md lg:h-40 lg:aspect-none">
+                <div className="w-full min-h-80 aspect-w-1 aspect-h-1 rounded-md lg:h-40 lg:aspect-none">
                   <Image
                     src={flash.get_image}
                     alt={flash.imageAlt}

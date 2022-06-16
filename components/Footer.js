@@ -96,17 +96,17 @@ export default function Footer() {
         <h5 className="text-xl font-bold mb-6 sm:text-center xl:text-left">Stay connected</h5>
         <div className="flex sm:justify-center xl:justify-start">
           <a href="" className="w-8 h-8  border-gray-400 rounded-full text-center text-gray-600 hover:text-white hover:bg-blue-600 hover:border-blue-600">
-          <FacebookShareButton  url={'http://localhost:3000'} >
+          <FacebookShareButton  url={'https://www.facebook.com/OwinoOnlineofficial'} >
           <FacebookIcon size={32} round />
         </FacebookShareButton>
           </a>
           <a href="" className="w-8 h-8  border-gray-400 rounded-full text-center  ml-2 text-gray-600 hover:text-white hover:bg-blue-400 hover:border-blue-400">
-          <TwitterShareButton url={'http://localhost:3000'} >
+          <TwitterShareButton url={'https://twitter.com/owinoonline'} >
         <TwitterIcon size={32} round />
       </TwitterShareButton>
           </a>
           <a href="" className="w-8 h-8   border-gray-400 rounded-full text-center  ml-2 text-gray-600 hover:text-white hover:bg-red-600 hover:border-red-600">
-          <WhatsappShareButton url={'http://localhost:3000'} >
+          <WhatsappShareButton url={'https://wa.me/+256708994336?'}>
         <WhatsappIcon size={32} round />
       </WhatsappShareButton>
           </a>

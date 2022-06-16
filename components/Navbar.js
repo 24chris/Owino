@@ -3,15 +3,35 @@ import { Disclosure, Menu, Transition } from "@headlessui/react";
 // import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
 import Image from "next/image";
 import Link from "next/link";
+import {useSearchParams} from 'react-dom'
 
 export default function Navbar() {
 
-  // const [keyword, setKeyword] = useState('')
+  
 
-  const onInputChange = (e) =>{
-    e.preventDefault();
-    setKeyword(e.target.value.toLowerCase())
+  // const uri = window.location.search.substring(1)
+  // const params = new URLSearchParams(uri)
+
+  // if(params.get('query')){
+  //   this.query = params.get('query')
+  //   this.performSearch()
+  // }
+
+  const performSearch = async e =>{
+    e.preventDefault()
+    // try{
+    //   const body = {'query':this.query}
+    //   await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/v1/products/search/`,{
+    //     method:'POST',
+    //     headers:{'Content-Type':'application/json'},
+    //     body:JSON.stringify(body)
+    //   })
+    // }catch(error){
+    //   console.log(error)
+      
+    // }
   }
+
 
 
   return (
@@ -38,7 +58,7 @@ export default function Navbar() {
                   <div className="relative m-0">
                     <div className="relative flex flex-wrap items-stretch w-full">
                     {/* <button className="bg-white absolute ml-4 mt-3 px-3 rounded"><i className="pointer-events-none">Hello</i></button> */}
-                    <input type="text" name="query" onChange={onInputChange} className="w-40 mt-3 mb-2 h-7 sm:w-full sm:h-10 py-1 px-1 text-gray-700 rounded-full transition ease-out focus:text-gray-700 placeholder:italic placeholder:text-slate-400 pl-7" placeholder="Search"></input>
+                    <input type="text" name="query" onChange={performSearch} className="w-40 mt-3 mb-2 h-7 sm:w-full sm:h-10 py-1 px-1 text-gray-700 rounded-full transition ease-out focus:text-gray-700 placeholder:italic placeholder:text-slate-400 pl-7" placeholder="Search"></input>
                     <div className="flex -ml-1 box-border">
                       {/* <button className="my-auto h-3 w-3 border-r border-transparent peer-focus:border-gray-800 peer-focus:stroke-lime-300 sm:bg-blue-300 absolute top-0 right-0 mt-4 mr-2 py-4  px-5 rounded">
                       
@@ -88,18 +108,22 @@ export default function Navbar() {
                     </Link>
                   </li>
                 </ul>
-                {/* <ul className="flex right-0 absolute">
-                  <li className="box-border px-3 text-sm font-semibold">
-                    <a href="#">
+                <ul className="flex right-0 absolute">
+                  <li className="box-border -mx-px text-sm font-semibold">
+                    <Link href={'/'}>
+                    <a>
                     Download
                     </a>
+                    </Link>
                   </li>
                   <li className="box-border px-3 text-sm font-semibold">
-                    <a href="#">
+                    <Link href={'/'}>
+                    <a>
                     Contact Us
                     </a>
+                    </Link>
                   </li>
-                </ul> */}
+                </ul>
               </div>
             </div>
           </div>

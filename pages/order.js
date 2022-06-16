@@ -117,7 +117,7 @@ export default function Order() {
   return (
     <>
     <Head>
-      <title>{props.item}</title>
+      <title>{props.item} Owinoonline.com is an Online Shopping Portal That Mostly Deals In Second Hand Items</title>
       <meta name="Order" content={props.item}/>
     </Head>
     <Top/>
