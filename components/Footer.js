@@ -95,20 +95,20 @@ export default function Footer() {
       <div className="px-4 mt-4 sm:w-1/3 xl:w-1/6 sm:mx-auto xl:mt-0 xl:ml-auto">
         <h5 className="text-xl font-bold mb-6 sm:text-center xl:text-left">Stay connected</h5>
         <div className="flex sm:justify-center xl:justify-start">
-          <a href="" className="w-8 h-8  border-gray-400 rounded-full text-center text-gray-600 hover:text-white hover:bg-blue-600 hover:border-blue-600">
-          <FacebookShareButton  url={'https://www.facebook.com/OwinoOnlineofficial'} >
+          <a href={'https://www.facebook.com/OwinoOnlineofficial'} className="w-8 h-8  border-gray-400 rounded-full text-center text-gray-600 hover:text-white hover:bg-blue-600 hover:border-blue-600">
+          
           <FacebookIcon size={32} round />
-        </FacebookShareButton>
+        
           </a>
-          <a href="" className="w-8 h-8  border-gray-400 rounded-full text-center  ml-2 text-gray-600 hover:text-white hover:bg-blue-400 hover:border-blue-400">
-          <TwitterShareButton url={'https://twitter.com/owinoonline'} >
+          <a href={'https://twitter.com/owinoonline'} className="w-8 h-8  border-gray-400 rounded-full text-center  ml-2 text-gray-600 hover:text-white hover:bg-blue-400 hover:border-blue-400">
+          
         <TwitterIcon size={32} round />
-      </TwitterShareButton>
+     
           </a>
-          <a href="" className="w-8 h-8   border-gray-400 rounded-full text-center  ml-2 text-gray-600 hover:text-white hover:bg-red-600 hover:border-red-600">
-          <WhatsappShareButton url={'https://wa.me/+256708994336?'}>
+          <a href={'https://wa.me/+256708994336?'} className="w-8 h-8   border-gray-400 rounded-full text-center  ml-2 text-gray-600 hover:text-white hover:bg-red-600 hover:border-red-600">
+         
         <WhatsappIcon size={32} round />
-      </WhatsappShareButton>
+      
           </a>
         </div>
       </div>

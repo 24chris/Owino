@@ -383,7 +383,7 @@ export default function Product({products}) {
                 {products.description}
               </p>
               
-              <h2>Door delivery around Kampala is 5000/=</h2>
+              <h2>Door delivery will depend on the distance to your location from Kampala</h2>
              
               <button
                 type="button"
