@@ -105,7 +105,7 @@ export default function Footer() {
         <TwitterIcon size={32} round />
      
           </a>
-          <a href={'https://wa.me/+256708994336?'} className="w-8 h-8   border-gray-400 rounded-full text-center  ml-2 text-gray-600 hover:text-white hover:bg-red-600 hover:border-red-600">
+          <a href={'https://wa.me/+256771345613?'}className="w-8 h-8   border-gray-400 rounded-full text-center  ml-2 text-gray-600 hover:text-white hover:bg-red-600 hover:border-red-600">
          
         <WhatsappIcon size={32} round />
       

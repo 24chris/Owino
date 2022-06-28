@@ -31,16 +31,24 @@ export default function Home({ discounts, flash, newgoodies, trends, womens,cate
     <Head>
       <title>Owinoonline.com is an Online Shopping Portal That Mostly Deals In Second Hand Items</title>
       <meta name="Home" content="Home"/>
+      <meta name="description" content="Owinoonline.com is an Online Shopping Portal That Mostly Deals In Second Hand Items "/>
+      <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
+      {/*<meta name=viewport content="width=device-width, initial-scale=1">
+      <meta name="robots" content="noindex" /> */}
       <link rel="icon" href="/owinoonline.ico" />
     </Head>
       <Top />
       <Navbar />
       <HomeSlider/>
       <Menu categories={categories}/>
+      {/* Ad Space */}
       <Flash flash={flash}/>      
+      {/* Ad Space */}
       <New newgoodies={newgoodies}/>
+      {/* Ad space */}
       <Trending  trends = {trends}/>
-      <Women womens = {womens} />
+      {/* Ad Space */}
+      <Women  womens = {womens} />
       <NewsLetter />
       <Footer />
     </>

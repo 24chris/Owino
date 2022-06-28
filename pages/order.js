@@ -27,7 +27,7 @@ export default function Order() {
     currency: 'UGX',
     payment_options: 'card,mobilemoneyuganda',
     customer: {
-      email: 'owinoonline@gmail.com',
+      email: 'sales@owinoonline.com',
       phonenumber: '',
       name: lastname,
     },
@@ -119,6 +119,8 @@ export default function Order() {
     <Head>
       <title>{props.item} Owinoonline.com is an Online Shopping Portal That Mostly Deals In Second Hand Items</title>
       <meta name="Order" content={props.item}/>
+      <meta name="description" content="Owinoonline.com is an Online Shopping Portal That Mostly Deals In Second Hand Items "/>
+      <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
     </Head>
     <Top/>
       <Navbar />

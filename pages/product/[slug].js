@@ -342,6 +342,8 @@ export default function Product({products}) {
     <Head>
       <title>{products.name} | Owinoonline.com is an Online Shopping Portal That Mostly Deals In Second Hand Items</title>
       <meta name="category" content={products.description}/>
+      <meta name="description" content="Owinoonline.com is an Online Shopping Portal That Mostly Deals In Second Hand Items "/>
+      <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
     </Head>
      <Top />
       <NavBar />
@@ -398,7 +400,7 @@ export default function Product({products}) {
          
         </div>
       </div>
-      <div className="pt-10 pb-6 flex flex-col items-center">
+      {/* <div className="pt-10 pb-6 flex flex-col items-center">
         <h2 className="text-4xl mb-3">Related Products</h2>
         <p className="text-gray-600 text-sm"></p>
       </div>
@@ -479,7 +481,7 @@ export default function Product({products}) {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       
       <Footer />
     </>

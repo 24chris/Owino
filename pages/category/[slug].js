@@ -27,6 +27,8 @@ export default function Category({ categories }) {
     <Head>
       <title>{categories.name} | Owinoonline.com is an Online Shopping Portal That Mostly Deals In Second Hand Items</title>
       <meta name="category" content={categories.name}/>
+      <meta name="description" content="Owinoonline.com is an Online Shopping Portal That Mostly Deals In Second Hand Items "/>
+      <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
       <link rel="icon" href="/owinoline.ico" />
     </Head>
       <Top />
