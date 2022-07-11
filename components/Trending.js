@@ -15,7 +15,7 @@ export default function Trending({ trends }) {
             <h2 className="text-4xl mb-3">Trending</h2>
             <p className="text-gray-600 text-sm"></p>
           </div>
-          <div className="mt-6 grid grid-cols-2 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-6 xl:gap-x-8">
+          <div className="mt-6 mb-10 grid grid-cols-2 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-6 xl:gap-x-8">
             {Trends.map((Trend) => (
               <Link key={Trend.id} href={`product/${encodeURIComponent(Trend.get_absolute_url)}`} as={`product/${encodeURIComponent(Trend.get_absolute_url)}`}>
               <a>
@@ -23,13 +23,12 @@ export default function Trending({ trends }) {
                 
                 className="group relative transform hover:translate-y-2 hover:shadow-xl transition duration-300"
               >
-                <div className="w-full min-h-80 aspect-w-1 aspect-h-1 rounded-md lg:h-40 lg:aspect-none">
+                <div className="aspect-w-3 aspect-h-3 sm:aspect-w-1 sm:aspect-h-1">
                   <Image
                     src={Trend.get_image}
                      alt={Trend.imageAlt}
-                     height={192}
-                     width={200}
-                    className="h-48 w-full object-cover md:h-full md:w-48"
+                     layout="fill"
+                    className="object-cover"
                   />
                 </div>
                 <div className="overflow-hidden font-semibold text-base text-center mt-6">

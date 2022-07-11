@@ -14,7 +14,7 @@ import Head from "next/head";
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper";
 
-export default function Category({ categories }) {
+export default function Category({ categories,search }) {
   const groups = categories.products;
   console.log("Categories:", groups);
 
@@ -32,7 +32,7 @@ export default function Category({ categories }) {
       <link rel="icon" href="/owinoline.ico" />
     </Head>
       <Top />
-      <Navbar />
+      <Navbar search={search}/>
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
@@ -118,9 +118,13 @@ export async function getServerSideProps(context) {
 
   console.log("Category Returned", categories);
 
+  const all = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/latest-products/`);
+  const search = await all.json();
+
   return {
     props: {
       categories,
+      search
     },
   };
 }

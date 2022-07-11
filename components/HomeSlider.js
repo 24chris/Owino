@@ -43,46 +43,46 @@ export default function HomeSlider(){
         modules={[Autoplay, Pagination, Navigation]}
         className=""
       >
-        <SwiperSlide className="flex-shrink-0 relative w-full min-h-80 bg-gray-200 aspect-w-1 aspect-h-1 rounded-md lg:h-40 lg:aspect-none">
+        <SwiperSlide className="flex-shrink-0 relative w-full h-full bg-gray-200 aspect-w-5 aspect-h-1">
           <Image 
           src={PicOne} 
-          height={330}
-           width={1490} 
+          layout="fill"
            alt="Image 1"
+           className="object-cover"
            />
         </SwiperSlide>
-        <SwiperSlide className="w-full min-h-80 bg-gray-200 aspect-w-1 aspect-h-1 rounded-md lg:h-40 lg:aspect-none">
+        <SwiperSlide className="flex-shrink-0 relative w-full h-full bg-gray-200 aspect-w-5 aspect-h-1">
           <Image 
           src={PicTwo}
-          height={330}
-          width={1490}
+          className="object-cover"
+          layout="fill"
           alt="Image 2"
           />
         </SwiperSlide>
-        <SwiperSlide className="w-full min-h-80 bg-gray-200 aspect-w-1 aspect-h-1 rounded-md lg:h-40 lg:aspect-none">
+        <SwiperSlide className="flex-shrink-0 relative w-full h-full bg-gray-200 aspect-w-5 aspect-h-1">
           <Image 
           src={PicFour} 
-          height={330}
-           width={1490} 
+          className="object-cover"
+          layout="fill" 
            alt="Image 1"
            />
         </SwiperSlide>
         
-        <SwiperSlide className="w-full min-h-80 bg-gray-200 aspect-w-1 aspect-h-1 rounded-md lg:h-40 lg:aspect-none">
+        <SwiperSlide className="flex-shrink-0 relative w-full h-full bg-gray-200 aspect-w-5 aspect-h-1">
           <Image 
           src={PicFive}
-          height={330}
-          width={1490}
+          className="object-cover"
+          layout="fill"
           alt="Image 2"
           />
         </SwiperSlide>
-        <SwiperSlide className="w-full min-h-80 bg-gray-200 aspect-w-1 aspect-h-1 rounded-md lg:h-40 lg:aspect-none">
+        <SwiperSlide className="flex-shrink-0 relative w-full h-full bg-gray-200 aspect-w-5 aspect-h-1">
           <Image
            src={PicThree} 
-           height={330} 
-           width={1490} 
+           className="object-cover"
+          layout="fill"
            alt="Image 3"
-           className="object-fit h-330 w-full object-cover md:h-full md:w-1490"
+  
            />
         </SwiperSlide>
         {/* <SwiperSlide>Slide 4</SwiperSlide>
