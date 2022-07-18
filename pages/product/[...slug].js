@@ -344,7 +344,7 @@ export default function Product({ products, search }) {
               src={products.get_image}
               alt={products.name}
               layout="fill"
-              className="object-cover"
+              className="object-contain"
             />
           </div>
  
