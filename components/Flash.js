@@ -19,8 +19,8 @@ export default function Flash({ flash }) {
                 key={flash.id}
                 // href={`prod${encodeURI(flash.get_absolute_url)}`}
                 // as={`prod${encodeURI(flash.get_absolute_url)}`}
-                href={`product/${encodeURIComponent(all.get_absolute_url)}`}
-                as={`product/${encodeURIComponent(all.get_absolute_url)}`}
+                href={`product/${encodeURIComponent(flash.get_absolute_url)}`}
+                as={`product/${encodeURIComponent(flash.get_absolute_url)}`}
               >
                 <a>
                   <div className="group relative h-full w-full transform hover:translate-y-2 hover:shadow-xl transition duration-300">
