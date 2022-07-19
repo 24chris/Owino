@@ -74,13 +74,12 @@ export default function Category({ categories,search }) {
                 key={group.id}
                 className="group relative transform hover:translate-y-2 hover:shadow-xl transition duration-300"
               >
-                <div className="w-full min-h-80 bg-gray-200 aspect-w-1 aspect-h-1 rounded-md lg:h-40 lg:aspect-none">
+                <div className="aspect-w-3 aspect-h-3 sm:aspect-w-1 sm:aspect-h-1">
                   <Image
                     src={group.get_image}
                     alt={group.imageAlt}
-                    className="h-48 w-full object-cover md:h-full md:w-48"
-                    height={192}
-                    width={200}
+                    className="object-cover"
+                    layout="fill"
                   />
                 </div>
                 <div className="overflow-hidden font-semibold text-base text-center mt-6">
