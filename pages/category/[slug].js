@@ -62,7 +62,7 @@ export default function Category({ categories,search }) {
       </Swiper>
       
       <div className="bg-white">
-        <div className="max-w-2xl mx-auto px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
+        <div className="mx-auto py-0 px-4 sm:py-0 sm:px-6">
           <div className="pt-10 pb-6 flex flex-col items-center">
             <h2 className="text-4xl mb-3">{categories.name}</h2>
             <p className="text-gray-600 text-sm"></p>
