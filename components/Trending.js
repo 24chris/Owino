@@ -2,11 +2,8 @@ import Link from "next/link";
 import Image from "next/image";
 
 export default function Trending({ trends }) {
-
-  const  Trends = trends.products.slice(0,6)
-  console.log("data for women", Trends)
-
   
+
   return (
     <>
       <div className="bg-white">
@@ -17,43 +14,40 @@ export default function Trending({ trends }) {
           </div>
           <div className="mt-6 mb-10 grid grid-cols-2 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-6 xl:gap-x-8">
             {Trends.map((Trend) => (
-              <Link key={Trend.id} href={`product/${encodeURIComponent(Trend.get_absolute_url)}`} as={`product/${encodeURIComponent(Trend.get_absolute_url)}`}>
-              <a>
-              <div
-                
-                className="group relative transform hover:translate-y-2 hover:shadow-xl transition duration-300"
+              <Link
+                key={Trend.id}
+                href={`product${encodeURI(Trend.get_absolute_url)}`}
+                as={`product${encodeURI(Trend.get_absolute_url)}`}
               >
-                <div className="aspect-w-3 aspect-h-3 sm:aspect-w-1 sm:aspect-h-1">
-                  <Image
-                    src={Trend.get_image}
-                     alt={Trend.imageAlt}
-                     layout="fill"
-                    className="object-cover"
-                  />
-                </div>
-                <div className="overflow-hidden font-semibold text-base text-center mt-6">
-                  <div>
-                    <h3 className=" ">
-                      
-                        <span aria-hidden="true" className="" />
-                        {Trend.name}
-                    
-                    </h3>
-                    <p className="mt-3 pl-8 text-xl  text-red-500 ">
-                      UGX {Trend.price.toLocaleString()}
-                    </p>
+                <a>
+                  <div className="pt-0 pr-0 pb-1 pl-0">
+                    <div className="relative border-solid border-grey border-2 rounded-md p-2">
+                      <div className="relative aspect-w-1 aspect-h-1 sm:aspect-w-1 sm:aspect-h-1">
+                      <Image
+                        src={Trend.get_image}
+                        alt={Trend.imageAlt}
+                        layout="fill"
+                        // width={219}
+                        // height={187}
+                        className="absolute top-0 left-0 bottom-0 right-0 max-w-full max-h-full z-10 object-contain"
+                      />
+                      </div>
+                    <div className="h-20 mt-2 mx-0 mb-0 text-center whitespace-normal">
+                      <div className="text-sm h-10 mt-0 mx-0 mb-3 font-normal overflow-hidden">
+                          {Trend.name}
+                      </div>
+                      <p className="text-red-500 text-base font-bold m-0">
+                          UGX {Trend.price.toLocaleString()}
+                        </p>
+                    </div>
+                    </div>
                   </div>
-                  <p className="text-sm font-medium text-gray-900 "></p>
-                </div>
-              </div>
-              </a>
+                </a>
               </Link>
-             ))}
+            ))}
           </div>
         </div>
       </div>
     </>
   );
 }
-
-

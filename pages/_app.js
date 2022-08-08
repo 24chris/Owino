@@ -8,8 +8,8 @@ config.autoAddCss = false; // Tell Font Awesome to skip adding the CSS automatic
 function MyApp({ Component, pageProps }) {
   return(
     <>
-   <script strategy="LazyOnload" async src={'https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}'}></script>
-    <script id='google-analytics-script' strategy="LazyOnload">
+   <Script strategy="LazyOnload" async src={'https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}'}/>
+    <Script id='google-analytics-script' strategy="LazyOnload">
       {`
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -17,7 +17,7 @@ function MyApp({ Component, pageProps }) {
 
       gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}');
       `}
-    </script> 
+    </Script> 
     <Component {...pageProps} />
     </>
   ) 

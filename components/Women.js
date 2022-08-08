@@ -2,11 +2,8 @@ import Link from "next/link";
 import Image from "next/image";
 
 export default function Women({ womens }) {
+ 
 
-  const  alls = womens.products.slice(0,6)
-  console.log("data for women", alls)
-
-  
   return (
     <>
       <div className="bg-white">
@@ -17,38 +14,37 @@ export default function Women({ womens }) {
           </div>
           <div className="mt-6 grid grid-cols-2 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-6 xl:gap-x-8">
             {alls.map((all) => (
-              <Link key={all.id} href={`product/${encodeURIComponent(all.get_absolute_url)}`} as={`product/${encodeURIComponent(all.get_absolute_url)}`}>
-              <a>
-              <div
-                
-                className="group relative transform hover:translate-y-2 hover:shadow-xl transition duration-300"
+              <Link
+                key={all.id}
+                href={`product${encodeURI(all.get_absolute_url)}`}
+                as={`product${encodeURI(all.get_absolute_url)}`}
               >
-                <div className="aspect-w-3 aspect-h-3 sm:aspect-w-1 sm:aspect-h-1">
-                  <Image
-                    src={all.get_image}
-                    alt={all.imageAlt}
-                    layout="fill"
-                    className="object-cover"
-                  />
-                </div>
-                <div className="overflow-hidden font-semibold text-base text-center mt-6">
-                  <div>
-                    <h3 className=" ">
-                      
-                        <span aria-hidden="true" className="" />
-                        {all.name}
-                    
-                    </h3>
-                    <p className="mt-3 pl-8 text-xl  text-red-500 ">
-                      UGX {all.price.toLocaleString()}
-                    </p>
+                 <a>
+                  <div className="pt-0 pr-0 pb-1 pl-0">
+                    <div className="relative border-solid border-grey border-2 rounded-md p-2">
+                      <div className="relative aspect-w-1 aspect-h-1 sm:aspect-w-1 sm:aspect-h-1">
+                      <Image
+                        src={all.get_image}
+                        alt={all.imageAlt}
+                        layout="fill"
+                        // width={219}
+                        // height={187}
+                        className="absolute top-0 left-0 bottom-0 right-0 max-w-full max-h-full z-10 object-contain"
+                      />
+                      </div>
+                    <div className="h-20 mt-2 mx-0 mb-0 text-center whitespace-normal">
+                      <div className="text-sm h-10 mt-0 mx-0 mb-3 font-normal overflow-hidden">
+                          {all.name}
+                      </div>
+                      <p className="text-red-500 text-base font-bold m-0">
+                          UGX {all.price.toLocaleString()}
+                        </p>
+                    </div>
+                    </div>
                   </div>
-                  <p className="text-sm font-medium text-gray-900 "></p>
-                </div>
-              </div>
-              </a>
+                </a>
               </Link>
-             ))}
+            ))}
           </div>
         </div>
       </div>

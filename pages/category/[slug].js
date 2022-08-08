@@ -69,36 +69,38 @@ export default function Category({ categories,search }) {
           </div>
           <div className="mt-6 grid grid-cols-2 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-6 xl:gap-x-8">
             {groups.map((group) => (
-              <Link key={group.id} href={`/product/${encodeURIComponent(group.get_absolute_url)}`}><a>
-              <div
-                key={group.id}
-                className="group relative transform hover:translate-y-2 hover:shadow-xl transition duration-300"
-              >
-                <div className="aspect-w-3 aspect-h-3 sm:aspect-w-1 sm:aspect-h-1">
-                  <Image
-                    src={group.get_image}
-                    alt={group.imageAlt}
-                    className="object-cover"
-                    layout="fill"
-                  />
-                </div>
-                <div className="overflow-hidden font-semibold text-base text-center mt-6">
-                  <div>
-                    <h3 className=" ">
-                      <a href={group.href} className=" ">
-                        <span aria-hidden="true" className="" />
+              <Link
+              key={group.id}
+              href={`/product${encodeURI(group.get_absolute_url)}`}
+              as={`/product${encodeURI(group.get_absolute_url)}`}
+              // href={`prod/${(flash.get_absolute_url)}`}
+              // as={`prod/${(flash.get_absolute_url)}`}
+            >
+              <a>
+                <div className="pt-0 pr-0 pb-1 pl-0">
+                  <div className="relative border-solid border-grey border-2 rounded-md p-2">
+                    <div className="relative aspect-w-1 aspect-h-1 sm:aspect-w-1 sm:aspect-h-1">
+                    <Image
+                      src={group.get_image}
+                      alt={group.imageAlt}
+                      layout="fill"
+                      // width={219}
+                      // height={187}
+                      className="absolute top-0 left-0 bottom-0 right-0 max-w-full max-h-full z-10 object-contain"
+                    />
+                    </div>
+                  <div className="h-20 mt-2 mx-0 mb-0 text-center whitespace-normal">
+                    <div className="text-sm h-10 mt-0 mx-0 mb-3 font-normal overflow-hidden">
                         {group.name}
-                      </a>
-                    </h3>
-                    <p className="mt-3 pl-8 text-xl  text-red-500 ">
-                      UGX {group.price.toLocaleString()}
-                    </p>
+                    </div>
+                    <p className="text-red-500 text-base font-bold m-0">
+                        UGX {group.price.toLocaleString()}
+                      </p>
                   </div>
-                  <p className="text-sm font-medium text-gray-900 "></p>
+                  </div>
                 </div>
-              </div>
-                </a>
-               </Link>
+              </a>
+            </Link>
             ))}
           </div>
         </div>

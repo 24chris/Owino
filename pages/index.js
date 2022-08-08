@@ -24,7 +24,9 @@ export default function Home({
   womens,
   categories,
   search,
+  // slider,
 }) {
+ 
   return (
     <>
       <Head>
@@ -55,12 +57,8 @@ export default function Home({
   <meta property="og:description"   content="Owinoonline.com is an Online Shopping Portal That Mostly Deals In Second Hand Items" />
   <meta property="og:image"         content="" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="google-site-verification" content="1knQBl2L-EqffbSiI9kkBaZtVJFENo-_49oAC2okMHk" />
+  <meta name="google-site-verification" content="G-K5DEKBBBVL" />
   
-        <meta
-          name="google-site-verification"
-          content="1knQBl2L-EqffbSiI9kkBaZtVJFENo-_49oAC2okMHk"
-        />
         <link rel="icon" href="/owinoonline.ico" />
       </Head>
       <Top />
@@ -71,49 +69,49 @@ export default function Home({
       <div className="mt-6 grid grid-cols-1 col-span-1 md:grid-cols-2 lg:grid-cols-3">
         <div className="">
           <div className="flex-shrink-0 mx-2 bg-gray-200 aspect-w-5 aspect-h-3">
-            <Image src={PicThree} alt="Ad one" layout="fill" className="object-cover" />
+            <Image src={PicThree} alt="Ad one" layout="fill" className="absolute top-0 left-0 bottom-0 right-0 max-w-full max-h-full z-10" />
           </div>
         </div>
 
         <div className="hidden md:block">
           <div className="flex-shrink-0 mx-2 bg-gray-200  aspect-w-5 aspect-h-3">
-            <Image src={PicOne} alt="Ad one" layout="fill" className="object-cover" />
+            <Image src={PicOne} alt="Ad one" layout="fill" className="absolute top-0 left-0 bottom-0 right-0 max-w-full max-h-full z-10" />
           </div>
         </div>
 
         <div className="hidden lg:block">
           <div className="flex-shrink-0 mx-2 bg-gray-200  aspect-w-5 aspect-h-3">
-            <Image src={PicTwo} alt="Ad one" layout="fill" className="object-cover" />
+            <Image src={PicTwo} alt="Ad one" layout="fill" className="absolute top-0 left-0 bottom-0 right-0 max-w-full max-h-full z-10" />
           </div>
         </div>
       </div>
       <Flash flash={flash} />
-      {/* Ad Space */}
+      {/* Ad  */}
 
       <New newgoodies={newgoodies} />
-      {/* Ad space */}
+      {/* Ad */}
       <div className="flex-shrink-0 mx-4 bg-gray-200 px-10 aspect-w-5 aspect-h-1">
         <div className="">
           <Image
             src={PicOne}
             alt="Ad one"
             layout="fill"
-            className="object-cover"
+            className="absolute top-0 left-0 bottom-0 right-0 max-w-full max-h-full z-10"
           />
         </div>
       </div>
       <Trending trends={trends} />
-      {/* Ad Space */}
+      {/* Ad */}
       <div className="mt-6 grid grid-cols-1 md:grid-cols-2">
         <div className="">
           <div className="flex-shrink-0 mx-2 bg-gray-200 aspect-w-4 aspect-h-2">
-            <Image src={PicTwo} alt="Ad one" layout="fill" className="object-cover" />
+            <Image src={PicTwo} alt="Ad one" layout="fill" className="absolute top-0 left-0 bottom-0 right-0 max-w-full max-h-full z-10" />
           </div>
         </div>
 
         <div className="hidden md:block">
           <div className="flex-shrink-0 mx-2 bg-gray-200  aspect-w-4 aspect-h-2">
-            <Image src={PicThree} alt="Ad one" layout="fill" className="object-cover" />
+            <Image src={PicThree} alt="Ad one" layout="fill" className="absolute top-0 left-0 bottom-0 right-0 max-w-full max-h-full z-10" />
           </div>
         </div>
       </div>
@@ -154,6 +152,11 @@ export async function getServerSideProps(context) {
   );
   const categories = await catres.json();
 
+  // const sliderImg = await fetch(
+  //   `${process.env.NEXT_PUBLIC_BASE_URL}/products/home-slider/`
+  // );
+  // const slider = await sliderImg.json();
+
   const all = await fetch(
     `${process.env.NEXT_PUBLIC_BASE_URL}/latest-products/`
   );
@@ -168,6 +171,7 @@ export async function getServerSideProps(context) {
       womens,
       categories,
       search,
+      // slider,
     },
   };
 }
