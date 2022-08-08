@@ -1,4 +1,8 @@
 import '../styles/globals.css'
+import  "@headlessui/react";
+import  "@heroicons/react/outline";
+import { Disclosure, Menu, Transition } from "@headlessui/react";
+import { BellIcon, MenuIcon, XIcon } from "@heroicons/react/outline";
 import "@fortawesome/fontawesome-svg-core/styles.css"; // import Font Awesome CSS
 import { config } from "@fortawesome/fontawesome-svg-core";
 import Script from 'next/script'
