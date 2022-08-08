@@ -47,17 +47,17 @@ export default function Category({ categories,search }) {
         modules={[Autoplay, Pagination, Navigation]}
         className=""
       >
-        <SwiperSlide className="flex-shrink-0 relative w-full min-h-40 bg-gray-200 aspect-w-1 aspect-h-1 rounded-md lg:h-40 lg:aspect-none">
-          <Image src={catImage.get_slider_image} height={330} width={1490} alt="Image 1" />
+        <SwiperSlide className="flex-shrink-0 relative w-full h-full bg-gray-200 aspect-w-5 aspect-h-1">
+          <Image src={catImage.get_slider_image} layout="fill" alt="Image 1" />
         </SwiperSlide>
-        <SwiperSlide className="flex-shrink-0 relative w-full min-h-40 bg-gray-200 aspect-w-1 aspect-h-1 rounded-md lg:h-40 lg:aspect-none">
-          <Image src={catImage.get_slider_image2} height={330} width={1490} alt="Image 1" />
+        <SwiperSlide className="flex-shrink-0 relative w-full h-full bg-gray-200 aspect-w-5 aspect-h-1">
+          <Image src={catImage.get_slider_image2} layout="fill"alt="Image 1" />
         </SwiperSlide>
-        <SwiperSlide className="flex-shrink-0 relative w-full min-h-40 bg-gray-200 aspect-w-1 aspect-h-1 rounded-md lg:h-40 lg:aspect-none">
-          <Image src={catImage.get_slider_image3} height={330} width={1490} alt="Image 1" />
+        <SwiperSlide className="flex-shrink-0 relative w-full h-full bg-gray-200 aspect-w-5 aspect-h-1">
+          <Image src={catImage.get_slider_image3} layout="fill" alt="Image 1" />
         </SwiperSlide>
-        <SwiperSlide className="flex-shrink-0 relative w-full min-h-40 bg-gray-200 aspect-w-1 aspect-h-1 rounded-md lg:h-40 lg:aspect-none">
-          <Image src={catImage.get_slider_image4} height={330} width={1490} alt="Image 1" />
+        <SwiperSlide className="flex-shrink-0 relative w-full h-full  bg-gray-200 aspect-w-5 aspect-h-1">
+          <Image src={catImage.get_slider_image4} layout="fill" alt="Image 1" />
         </SwiperSlide>
       </Swiper>
       
@@ -67,7 +67,7 @@ export default function Category({ categories,search }) {
             <h2 className="text-4xl mb-3">{categories.name}</h2>
             <p className="text-gray-600 text-sm"></p>
           </div>
-          <div className="mt-6 grid grid-cols-2 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-6 xl:gap-x-8">
+          <div className="mt-6 grid grid-cols-2 gap-y-10 gap-x-1 sm:grid-cols-2 lg:grid-cols-6 xl:gap-x-4">
             {groups.map((group) => (
               <Link
               key={group.id}
