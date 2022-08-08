@@ -21,7 +21,7 @@ export default function Flash({ flash }) {
                 
               >
                 <a>
-                  <div className="pt-0 pr-0 pb-1 pl-0">components/Flash.js
+                  <div className="pt-0 pr-0 pb-1 pl-0">
                     <div className="relative border-solid border-grey border-2 rounded-md p-2">
                       <div className="relative aspect-w-1 aspect-h-1 sm:aspect-w-1 sm:aspect-h-1">
                       <Image
