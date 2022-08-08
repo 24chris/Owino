@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 export default function Women({ womens }) {
- 
+  const alls = womens.products.slice(0, 6);
 
   return (
     <>

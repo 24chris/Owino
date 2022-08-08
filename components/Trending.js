@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 export default function Trending({ trends }) {
-  
+  const Trends = trends.products.slice(0, 6);
 
   return (
     <>
