@@ -7,12 +7,12 @@ export default function Women({ womens }) {
   return (
     <>
       <div className="bg-white">
-        <div className="mx-auto py-0 px-4 sm:py-0 sm:px-6">
-          <div className="pt-10 pb-6 flex flex-col items-center">
-            <h2 className="text-4xl mb-3">Women Items</h2>
+        <div className="py-0 px-4 sm:py-0 sm:px-6 sm:mx-5">
+          <div className="pt-10 pb-6 flex flex-col items-left">
+            <h2 className="text-3xl text-left mb-1">Women Items</h2>
             <p className="text-gray-600 text-sm"></p>
           </div>
-          <div className="mt-6 grid grid-cols-2 gap-y-10 gap-x-1 sm:grid-cols-2 lg:grid-cols-6 xl:gap-x-4">
+          <div className="mt-1 grid grid-cols-2 gap-y-10 gap-x-1 sm:grid-cols-2 lg:grid-cols-6 xl:gap-x-4">
             {alls.map((all) => (
               <Link
                 key={all.id}

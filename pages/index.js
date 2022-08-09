@@ -14,7 +14,7 @@ import Menu from "../components/Menu";
 import Top from "../components/Top";
 import PicOne from "../public/items/88.png";
 import PicTwo from "../public/items/KK.png"
-import PicThree from "../public/items/imgthree.png"
+import PicThree from "../public/items/imgthreeAd.png"
 
 export default function Home({
   discounts,
@@ -57,7 +57,7 @@ export default function Home({
   <meta property="og:description"   content="Owinoonline.com is an Online Shopping Portal That Mostly Deals In Second Hand Items" />
   <meta property="og:image"         content="" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="google-site-verification" content="G-K5DEKBBBVL" />
+  <meta name="google-site-verification" content="JuJEgthIQTYcrGsIrOpjMEXyHvv4PjnQYk4syuIxldA" />
   
         <link rel="icon" href="/owinoonline.ico" />
       </Head>
@@ -66,7 +66,7 @@ export default function Home({
       <HomeSlider />
       <Menu categories={categories} />
       {/* Ad Space */}
-      <div className="mt-6 grid grid-cols-1 col-span-1 md:grid-cols-2 lg:grid-cols-3">
+      <div className="mt-6 grid grid-cols-1 col-span-1 sm:mx-8  md:grid-cols-2 lg:grid-cols-3 ">
         <div className="">
           <div className="flex-shrink-0 mx-2 bg-gray-200 aspect-w-5 aspect-h-3">
             <Image src={PicThree} alt="Ad one" layout="fill" className="absolute top-0 left-0 bottom-0 right-0 max-w-full max-h-full z-10" />
@@ -90,7 +90,8 @@ export default function Home({
 
       <New newgoodies={newgoodies} />
       {/* Ad */}
-      <div className="flex-shrink-0 mx-4 bg-gray-200 px-10 aspect-w-5 aspect-h-1">
+      <div className="mt-6 mx-2 grid grid-cols-1 sm:mx-8 ">
+      <div className="mt-10 flex-shrink-0 bg-gray-200 px-10 aspect-w-5 aspect-h-1">
         <div className="">
           <Image
             src={PicOne}
@@ -100,9 +101,10 @@ export default function Home({
           />
         </div>
       </div>
+      </div>
       <Trending trends={trends} />
       {/* Ad */}
-      <div className="mt-6 grid grid-cols-1 md:grid-cols-2">
+      <div className="mt-10 grid grid-cols-1 sm:mx-8 md:grid-cols-2">
         <div className="">
           <div className="flex-shrink-0 mx-2 bg-gray-200 aspect-w-4 aspect-h-2">
             <Image src={PicTwo} alt="Ad one" layout="fill" className="absolute top-0 left-0 bottom-0 right-0 max-w-full max-h-full z-10" />
@@ -117,7 +119,7 @@ export default function Home({
       </div>
 
       <Women womens={womens} />
-      <NewsLetter />
+      {/* <NewsLetter /> */}
       <Footer />
     </>
   );
