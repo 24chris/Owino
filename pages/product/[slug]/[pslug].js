@@ -13,7 +13,7 @@ export default function Product({ products, search }) {
 
   const relatedProducts = JSON.parse(products.related_products).slice(0,6)
 
-  console.log("Realted Products",relatedProducts)
+  // console.log("Realted Products",relatedProducts)
   
   const router = useRouter();
 

@@ -23,7 +23,7 @@ import PicFive from '../public/items/online5.png'
 
 export default function HomeSlider({slider}){
 
-console.log("Slider Images",slider)
+
     return(
         <>
         <div className="relative">
