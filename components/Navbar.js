@@ -43,6 +43,7 @@ export default function Navbar({ search }) {
     setWordEntered("");
   };
 
+
   return (
     <>
       <div className="bg-red-900 relative">
@@ -88,8 +89,8 @@ export default function Navbar({ search }) {
                           xmlns="http://www.w3.org/2000/svg"
                         >
                           <path
-                            strokeLineCap="round"
-                            strokeLineJoin="round"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
                             strokeWidth="2"
                             d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
                           ></path>
@@ -114,21 +115,28 @@ export default function Navbar({ search }) {
                               key={key.id}
                               className="w-fulltext-sm font-medium text-gray-900 border-gray-200 dark:border-gray-600 dark:text-black z-50 truncate"
                             >
-                              <Link
-                                href={`${encodeURI(value.get_absoulute_url)}`}
+                              {/* <Link
+                                href={`/product${encodeURI(value.get_absoulute_url)}`}
                                 as={value.get_absoulute_url}
                               >
                                 <a
                                   className="w-full px-4 py-4 dark:border-gray-600"
-                                  href={`${encodeURI(value.get_absoulute_url)}`}
+                                  href={`/product${encodeURI(value.get_absoulute_url)}`}
                                 >
                                   {/* <div className="w-10 p-1 float-left border-2 border-solid bg-white">
                                     <Image className="" src={value.get_thumbnail} alt={value.get_name} layout="fill"/>
-                                  </div> */}
+                                  </div> 
                                   {value.name}
                                 </a>
-                              </Link>
+                              </Link> */}
+                              <a key={value.id} className="w-full px-4 py-4 dark:border-gray-600" href={`/product${encodeURI(value.get_absolute_url)}`}>{value.name}</a>
                             </div>
+
+                            // console.log("Searched Items",value.get_absolute_url)
+                            
+                              
+                            
+
                           );
                         })}
                       </div>
@@ -155,7 +163,7 @@ export default function Navbar({ search }) {
                   >
                     <path
                       strokeLineCap="round"
-                      strokeLineJoin="round"
+                      strokeLinejoin="round"
                       strokeWidth="2"
                       d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
                     ></path>

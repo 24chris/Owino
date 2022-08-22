@@ -21,10 +21,9 @@ import PicFive from '../public/items/online5.png'
 
 
 
-export default function HomeSlider(){
+export default function HomeSlider({slider}){
 
-  
-
+console.log("Slider Images",slider)
     return(
         <>
         <div className="relative">
@@ -43,17 +42,20 @@ export default function HomeSlider(){
         modules={[Autoplay, Pagination, Navigation]}
         className=""
       >
+        {/* {slider.map((slide) => (
+            <SwiperSlide key={slide.id} className="flex-shrink-0 relative w-full h-full bg-gray-200 aspect-w-5 aspect-h-1">
+            <Image 
+            src={slide.get_image} 
+            layout="fill"
+             alt="Shopping"
+             className="object-cover"
+             />
+           </SwiperSlide>
+        ))} */}
+        
         <SwiperSlide className="flex-shrink-0 relative w-full h-full bg-gray-200 aspect-w-5 aspect-h-1">
           <Image 
-          src={PicOne} 
-          layout="fill"
-           alt="Image 1"
-           className="object-cover"
-           />
-        </SwiperSlide>
-        <SwiperSlide className="flex-shrink-0 relative w-full h-full bg-gray-200 aspect-w-5 aspect-h-1">
-          <Image 
-          src={PicTwo}
+          src={slider.get_slider_image}
           className="object-cover"
           layout="fill"
           alt="Image 2"
@@ -61,7 +63,7 @@ export default function HomeSlider(){
         </SwiperSlide>
         <SwiperSlide className="flex-shrink-0 relative w-full h-full bg-gray-200 aspect-w-5 aspect-h-1">
           <Image 
-          src={PicFour} 
+          src={slider.get_slider_image2} 
           className="object-cover"
           layout="fill" 
            alt="Image 1"
@@ -70,7 +72,7 @@ export default function HomeSlider(){
         
         <SwiperSlide className="flex-shrink-0 relative w-full h-full bg-gray-200 aspect-w-5 aspect-h-1">
           <Image 
-          src={PicFive}
+          src={slider.get_slider_image3}
           className="object-cover"
           layout="fill"
           alt="Image 2"
@@ -78,7 +80,7 @@ export default function HomeSlider(){
         </SwiperSlide>
         <SwiperSlide className="flex-shrink-0 relative w-full h-full bg-gray-200 aspect-w-5 aspect-h-1">
           <Image
-           src={PicThree} 
+           src={slider.get_slider_image4} 
            className="object-cover"
           layout="fill"
            alt="Image 3"

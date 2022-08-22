@@ -24,7 +24,7 @@ export default function Home({
   womens,
   categories,
   search,
-  // slider,
+  slider,
 }) {
  
   return (
@@ -63,7 +63,7 @@ export default function Home({
       </Head>
       <Top />
       <Navbar search={search} />
-      <HomeSlider />
+      <HomeSlider slider={slider}/>
       <Menu categories={categories} />
       {/* Ad Space */}
       <div className="mt-6 grid grid-cols-1 col-span-1 sm:mx-8  md:grid-cols-2 lg:grid-cols-3 ">
@@ -154,10 +154,11 @@ export async function getServerSideProps(context) {
   );
   const categories = await catres.json();
 
-  // const sliderImg = await fetch(
-  //   `${process.env.NEXT_PUBLIC_BASE_URL}/products/home-slider/`
-  // );
-  // const slider = await sliderImg.json();
+  const sliderImg = await fetch(
+    `${process.env.NEXT_PUBLIC_BASE_URL}/products/home-slider/`
+  );
+  const slider = await sliderImg.json();
+
 
   const all = await fetch(
     `${process.env.NEXT_PUBLIC_BASE_URL}/latest-products/`
@@ -173,7 +174,7 @@ export async function getServerSideProps(context) {
       womens,
       categories,
       search,
-      // slider,
+      slider,
     },
   };
 }
