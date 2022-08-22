@@ -11,7 +11,7 @@ import Head from "next/head";
 
 export default function Product({ products, search }) {
 
-  const relatedProducts = JSON.parse(products.related_products)
+  const relatedProducts = JSON.parse(products.related_products).slice(0,6)
 
   console.log("Realted Products",relatedProducts)
   
