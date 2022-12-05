@@ -79,61 +79,12 @@ export default function Home({
         <link rel="icon" href="/owinoonline.ico" />
       </Head>
      
-
-{/* Coming soon start */}
-
-<div className="relative overflow-hidden bg-white">
-      <div className="mx-auto max-w-7xl">
-        <div className="relative z-10 bg-white pb-8 sm:pb-16 md:pb-20 lg:w-full lg:max-w-2xl lg:pb-28 xl:pb-32">
-          <svg
-            className="absolute inset-y-0 right-0 hidden h-full w-48 translate-x-1/2 transform text-white lg:block"
-            fill="currentColor"
-            viewBox="0 0 100 100"
-            preserveAspectRatio="none"
-            aria-hidden="true"
-          >
-            <polygon points="50,0 100,0 50,100 0,100" />
-          </svg>
-
-  
-
-          <main className="mx-auto mt-10 max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
-            <div className="sm:text-center lg:text-left">
-              <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl md:text-6xl">
-                <span className="block xl:inline">We are preparing
-something exciting
-& amazing for you.</span>{' '}
-               
-              </h1>
-              
-              
-            </div>
-          </main>
-        </div>
-      </div>
-      <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-        <img
-          className="h-56 w-full object-cover sm:h-72 md:h-96 lg:h-full lg:w-full"
-          src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80"
-          alt=""
-        />
-      </div>
-    </div>
-
-
-{/* Coming soon end */}
-
-
-
-
-
-
-      {/* <Top />
+       <Top />
       <Navbar search={search} />
       <HomeSlider slider={slider} />
-      <Menu categories={categories} /> */}
+      <Menu categories={categories} /> 
       {/* Ad Space */}
-      {/* <div className="mt-6 grid grid-cols-1 col-span-1 sm:mx-8  md:grid-cols-2 lg:grid-cols-3 ">
+      <div className="mt-6 grid grid-cols-1 col-span-1 sm:mx-8  md:grid-cols-2 lg:grid-cols-3 ">
         <div className="">
           <div className="flex-shrink-0 mx-2 bg-gray-200 aspect-w-5 aspect-h-3">
             <Image
@@ -168,11 +119,11 @@ something exciting
         </div>
       </div>
       <Flash flash={flash} />
-      {/* Ad  */}
-
-      {/* <New newgoodies={newgoodies} /> */} 
       {/* Ad */}
-      {/* <div className="mt-6 mx-2 grid grid-cols-1 sm:mx-8 ">
+
+       <New newgoodies={newgoodies} /> 
+      {/* Ad */}
+       <div className="mt-6 mx-2 grid grid-cols-1 sm:mx-8 ">
         <div className="mt-10 flex-shrink-0 bg-gray-200 px-10 aspect-w-5 aspect-h-1">
           <div className="">
             <Image
@@ -184,9 +135,9 @@ something exciting
           </div>
         </div>
       </div>
-      <Trending trends={trends} /> */}
+      <Trending trends={trends} /> 
       {/* Ad */}
-      {/* <div className="mt-10 grid grid-cols-1 sm:mx-8 md:grid-cols-2">
+       <div className="mt-10 grid grid-cols-1 sm:mx-8 md:grid-cols-2">
         <div className="">
           <div className="flex-shrink-0 mx-2 bg-gray-200 aspect-w-4 aspect-h-2">
             <Image
@@ -208,64 +159,64 @@ something exciting
             />
           </div>
         </div>
-      </div> */}
+      </div> 
 
-      {/* <Women womens={womens} /> */}
-      {/* <NewsLetter /> */}
-      {/* <Footer /> */}
+       <Women womens={womens} /> 
+       <NewsLetter /> 
+       <Footer /> 
     </>
   );
 }
 
-// export async function getServerSideProps(context) {
-//   const res = await fetch(
-//     `${process.env.NEXT_PUBLIC_BASE_URL}/products/discount/`
-//   );
-//   const discounts = await res.json();
+export async function getServerSideProps(context) {
+  const res = await fetch(
+    `${process.env.NEXT_PUBLIC_BASE_URL}/products/discount/`
+  );
+  const discounts = await res.json();
 
-//   const ress = await fetch(
-//     `${process.env.NEXT_PUBLIC_BASE_URL}/products/flash/`
-//   );
-//   const flash = await ress.json();
+  const ress = await fetch(
+    `${process.env.NEXT_PUBLIC_BASE_URL}/products/flash/`
+  );
+  const flash = await ress.json();
 
-//   const newgood = await fetch(
-//     `${process.env.NEXT_PUBLIC_BASE_URL}/products/new/`
-//   );
-//   const newgoodies = await newgood.json();
+  const newgood = await fetch(
+    `${process.env.NEXT_PUBLIC_BASE_URL}/products/new/`
+  );
+  const newgoodies = await newgood.json();
 
-//   const tr = await fetch(
-//     `${process.env.NEXT_PUBLIC_BASE_URL}/products/trending/`
-//   );
-//   const trends = await tr.json();
+  const tr = await fetch(
+    `${process.env.NEXT_PUBLIC_BASE_URL}/products/trending/`
+  );
+  const trends = await tr.json();
 
-//   const wn = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/products/women/`);
-//   const womens = await wn.json();
+  const wn = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/products/women/`);
+  const womens = await wn.json();
 
-//   const catres = await fetch(
-//     `${process.env.NEXT_PUBLIC_BASE_URL}/products/women/`
-//   );
-//   const categories = await catres.json();
+  const catres = await fetch(
+    `${process.env.NEXT_PUBLIC_BASE_URL}/products/women/`
+  );
+  const categories = await catres.json();
 
-//   const sliderImg = await fetch(
-//     `${process.env.NEXT_PUBLIC_BASE_URL}/products/home-slider/`
-//   );
-//   const slider = await sliderImg.json();
+  const sliderImg = await fetch(
+    `${process.env.NEXT_PUBLIC_BASE_URL}/products/home-slider/`
+  );
+  const slider = await sliderImg.json();
 
-//   const all = await fetch(
-//     `${process.env.NEXT_PUBLIC_BASE_URL}/latest-products/`
-//   );
-//   const search = await all.json();
+  const all = await fetch(
+    `${process.env.NEXT_PUBLIC_BASE_URL}/latest-products/`
+  );
+  const search = await all.json();
 
-//   return {
-//     props: {
-//       discounts,
-//       flash,
-//       newgoodies,
-//       trends,
-//       womens,
-//       categories,
-//       search,
-//       slider,
-//     },
-//   };
-// }
+  return {
+    props: {
+      discounts,
+      flash,
+      newgoodies,
+      trends,
+      womens,
+      categories,
+      search,
+      slider,
+    },
+  };
+}
